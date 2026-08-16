@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "titleTemplate": "%s | Clovera Bridal",
+    "defaultTitle": "Clovera Bridal — Couture Wedding Dresses | Da Nang, Vietnam",
+    "description": "Clovera Bridal is a luxury bridal atelier in Da Nang, Vietnam, crafting made-to-measure and bespoke wedding gowns for the modern bride."
+  },
+  "nav": {
+    "about": "About",
+    "collections": "Collections",
+    "services": "Services",
+    "contact": "Contact",
+    "book": "Book Now"
+  },
+  "footer": {
+    "tagline": "Couture bridal gowns, handcrafted in Da Nang, Vietnam.",
+    "explore": "Explore",
+    "studio": "Studio",
+    "follow": "Follow",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "bookNow": "Book Now",
+    "bookAppointment": "Book an Appointment",
+    "discoverCollections": "Explore Collections",
+    "viewServices": "View Services",
+    "readMore": "Read More",
+    "enquire": "Enquire",
+    "viewCollection": "View Collection",
+    "backToCollections": "Back to Collections",
+    "imagePlaceholder": "Photography coming soon"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Clovera Bridal",
+      "heading": "Gowns designed for the one day worn — and the lifetime remembered.",
+      "sub": "A luxury bridal atelier in Da Nang, Vietnam, crafting made-to-measure, bespoke, and ready-to-order couture for the modern bride.",
+      "ctaPrimary": "Book an Appointment",
+      "ctaSecondary": "Explore Collections"
+    },
+    "intro": {
+      "eyebrow": "The Atelier",
+      "heading": "Every gown begins as a conversation.",
+      "body": "Clovera Bridal is built on quiet craftsmanship — hand-selected fabrics, considered silhouettes, and fittings that treat every bride as the only bride. Whether made-to-measure, bespoke from a blank page, or chosen from our seasonal collections, each gown carries the same standard: exclusive, meticulous, and entirely yours."
+    },
+    "collections": {
+      "eyebrow": "2026 Collections",
+      "heading": "Venus in Bloom & Venus in Flight",
+      "body": "Two collections built around a single idea — that a bride should feel like herself, only more so.",
+      "cta": "Explore Collections"
+    },
+    "services": {
+      "eyebrow": "What We Offer",
+      "heading": "Four ways to arrive at your gown"
+    },
+    "ctaBand": {
+      "heading": "Your gown begins with a conversation.",
+      "body": "Book a private appointment at our Da Nang studio and start designing the dress you'll remember forever.",
+      "cta": "Book Now"
+    }
+  },
+  "about": {
+    "eyebrow": "About Clovera Bridal",
+    "heading": "Quiet craftsmanship, exclusive by design.",
+    "intro": "Clovera Bridal was founded on a simple belief: a wedding gown should be made the way it is worn — once, completely, and without compromise.",
+    "body1": "Based in Da Nang, Vietnam, our atelier brings together considered design, hand-selected fabrics, and a fitting process built around the bride rather than the calendar. We work in small numbers by choice, so every gown — made-to-measure, bespoke, or chosen from a seasonal collection — receives the same unhurried attention.",
+    "body2": "Our 2026 collections, Venus in Bloom and Venus in Flight, sit alongside a fully bespoke service for brides who arrive with nothing but an idea. In every case, the process is the same: a conversation first, a sketch second, and a gown that could only belong to one person.",
+    "valuesHeading": "What guides the work",
+    "values": [
+      {
+        "title": "Exclusivity",
+        "body": "No gown is repeated for two brides in the same season. What you wear is designed to be yours alone."
+      },
+      {
+        "title": "Craftsmanship",
+        "body": "Every piece is hand-finished across multiple fittings, with construction built to move — and last — beautifully."
+      },
+      {
+        "title": "Personal fit",
+        "body": "Measurements, fabric, and silhouette are shaped around you, not adjusted from a standard size chart."
+      }
+    ],
+    "cta": "Book an Appointment"
+  },
+  "services": {
+    "eyebrow": "Services",
+    "heading": "Four ways to arrive at your gown",
+    "intro": "From a fully custom design to a ready-to-order piece from our lookbook, every path leads through the same hands and the same care.",
+    "items": [
+      {
+        "slug": "made-to-measure",
+        "title": "Made-to-Measure Bridal Gowns",
+        "description": "Designed and tailored to your measurements and personal style. From sketch to finished product — handcrafted, meticulous and exclusive.",
+        "price": "Contact for pricing / per design",
+        "features": [
+          "1-on-1 style consultation",
+          "Custom design sketches",
+          "2–3 fittings and alterations",
+          "Domestic & international delivery"
+        ],
+        "cta": "Book a Consultation"
+      },
+      {
+        "slug": "ready-to-order",
+        "title": "Ready-to-Order Collections",
+        "description": "Choose a design from Venus in Bloom or Venus in Flight, made to your measurements with a faster turnaround time.",
+        "price": "Contact for pricing / per style",
+        "features": [
+          "Select from current lookbook",
+          "Custom measurements",
+          "Colour & fabric customisation",
+          "Ready in 6–12 weeks"
+        ],
+        "cta": "Browse Collections"
+      },
+      {
+        "slug": "bespoke-design",
+        "title": "Bespoke Design",
+        "description": "For brides who want a gown truly their own — from a concept on paper to a one-of-a-kind masterpiece.",
+        "price": "From $800 USD / depending on complexity",
+        "features": [
+          "100% exclusive design",
+          "Premium imported fabrics",
+          "Worldwide shipping included"
+        ],
+        "cta": "Start Your Design"
+      },
+      {
+        "slug": "bridal-accessories",
+        "title": "Bridal Accessories",
+        "description": "Complete your look with bridal accessories — veil, headpiece, belt — crafted to complement your gown.",
+        "price": "Contact us / per item",
+        "features": [
+          "Wedding veil (cathedral / chapel)",
+          "Headpiece & tiara",
+          "Embellished bridal belt"
+        ],
+        "cta": "Enquire"
+      }
+    ]
+  },
+  "collections": {
+    "eyebrow": "2026 Collections",
+    "heading": "Venus in Bloom & Venus in Flight",
+    "intro": "Two collections, one idea: a bride should feel entirely herself — only more so.",
+    "items": [
+      {
+        "slug": "venus-in-bloom",
+        "name": "Venus in Bloom",
+        "year": "2026",
+        "tagline": "Soft structure, romantic in restraint.",
+        "description": "Venus in Bloom explores the bride in her softest form — draped silhouettes, delicate florals worked into fabric rather than applied to it, and a palette drawn from first light. Each gown is available made-to-measure from this lookbook, with colour and fabric customisation available."
+      },
+      {
+        "slug": "venus-in-flight",
+        "name": "Venus in Flight",
+        "year": "2026",
+        "tagline": "Movement, sharpened by precision.",
+        "description": "Venus in Flight is built for the bride in motion — clean architectural lines, weightless layers, and construction designed to move with her rather than around her. Each gown is available made-to-measure from this lookbook, with colour and fabric customisation available."
+      }
+    ],
+    "cta": "Enquire About This Collection"
+  },
+  "book": {
+    "eyebrow": "Book an Appointment",
+    "heading": "Begin with a conversation.",
+    "intro": "Tell us a little about your wedding plans and preferred appointment date, and our studio will confirm your booking by email within 1–2 business days.",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+84 ...",
+      "date": "Preferred Appointment Date",
+      "notes": "Tell us about your wedding",
+      "notesPlaceholder": "Wedding date, style you have in mind, service you're interested in...",
+      "submit": "Request Appointment",
+      "submitting": "Sending...",
+      "successTitle": "Thank you — request received.",
+      "successBody": "We've received your appointment request and will be in touch by email shortly to confirm a time.",
+      "errorTitle": "Something went wrong.",
+      "errorBody": "Your request could not be sent. Please try again, or reach us directly at the contact details below.",
+      "requiredField": "This field is required.",
+      "invalidEmail": "Please enter a valid email address."
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Visit the studio.",
+    "intro": "For appointments, we recommend booking ahead through the form so we can prepare for your fitting. For everything else, reach us directly below.",
+    "addressLabel": "Studio",
+    "addressLine1": "Da Nang, Vietnam",
+    "addressLine2": "Full studio address to be confirmed",
+    "emailLabel": "Email",
+    "email": "hello@cloverabridal.com",
+    "phoneLabel": "Phone",
+    "phone": "Contact studio for phone details",
+    "hoursLabel": "Hours",
+    "hours": "By appointment, Tuesday – Sunday",
+    "socialLabel": "Follow"
+  },
+  "legal": {
+    "privacy": {
+      "heading": "Privacy Policy",
+      "updated": "Last updated: 2026",
+      "body": "This is placeholder privacy policy content for Clovera Bridal. Replace this section with your studio's actual data handling practices — what information is collected through the booking form and contact channels, how it is stored, who it is shared with (if anyone), and how a client can request access to or deletion of their information."
+    },
+    "terms": {
+      "heading": "Terms & Conditions",
+      "updated": "Last updated: 2026",
+      "body": "This is placeholder terms content for Clovera Bridal. Replace this section with your studio's actual policies on deposits, fittings, alteration timelines, cancellations, and delivery for made-to-measure, bespoke, and ready-to-order orders."
+    }
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "heading": "This page hasn't been designed yet.",
+    "body": "The page you're looking for doesn't exist. Let's take you somewhere else.",
+    "cta": "Back to Home"
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "titleTemplate": "%s | Clovera Bridal",
+    "defaultTitle": "Clovera Bridal — Áo Cưới Couture Cao Cấp | Đà Nẵng, Việt Nam",
+    "description": "Clovera Bridal là atelier áo cưới cao cấp tại Đà Nẵng, Việt Nam, chuyên thiết kế và may đo váy cưới may sẵn theo số đo và thiết kế riêng cho cô dâu hiện đại."
+  },
+  "nav": {
+    "about": "Giới Thiệu",
+    "collections": "Bộ Sưu Tập",
+    "services": "Dịch Vụ",
+    "contact": "Liên Hệ",
+    "book": "Đặt Lịch"
+  },
+  "footer": {
+    "tagline": "Váy cưới couture, thủ công tại Đà Nẵng, Việt Nam.",
+    "explore": "Khám Phá",
+    "studio": "Studio",
+    "follow": "Theo Dõi",
+    "legal": "Pháp Lý",
+    "privacy": "Chính Sách Bảo Mật",
+    "terms": "Điều Khoản & Điều Kiện",
+    "rights": "Bảo lưu mọi quyền."
+  },
+  "common": {
+    "bookNow": "Đặt Lịch Ngay",
+    "bookAppointment": "Đặt Lịch Hẹn",
+    "discoverCollections": "Khám Phá Bộ Sưu Tập",
+    "viewServices": "Xem Dịch Vụ",
+    "readMore": "Xem Thêm",
+    "enquire": "Liên Hệ Tư Vấn",
+    "viewCollection": "Xem Bộ Sưu Tập",
+    "backToCollections": "Quay Lại Bộ Sưu Tập",
+    "imagePlaceholder": "Hình ảnh sẽ được cập nhật sớm"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Clovera Bridal",
+      "heading": "Chiếc váy cho một ngày duy nhất — và cả một đời để nhớ.",
+      "sub": "Atelier áo cưới cao cấp tại Đà Nẵng, Việt Nam, chuyên thiết kế may đo, thiết kế riêng và bộ sưu tập may sẵn cho cô dâu hiện đại.",
+      "ctaPrimary": "Đặt Lịch Hẹn",
+      "ctaSecondary": "Khám Phá Bộ Sưu Tập"
+    },
+    "intro": {
+      "eyebrow": "Atelier",
+      "heading": "Mỗi chiếc váy bắt đầu từ một cuộc trò chuyện.",
+      "body": "Clovera Bridal được xây dựng trên nền tảng của sự tỉ mỉ thầm lặng — chất liệu được tuyển chọn kỹ lưỡng, form dáng được cân nhắc kỹ càng, và những buổi thử đồ nơi mỗi cô dâu đều được xem như duy nhất. Dù là may đo, thiết kế riêng từ con số không, hay chọn từ bộ sưu tập theo mùa, mỗi chiếc váy đều mang cùng một tiêu chuẩn: độc bản, tỉ mỉ và hoàn toàn thuộc về bạn."
+    },
+    "collections": {
+      "eyebrow": "Bộ Sưu Tập 2026",
+      "heading": "Venus in Bloom & Venus in Flight",
+      "body": "Hai bộ sưu tập, cùng chung một ý tưởng — cô dâu nên là chính mình, chỉ là một phiên bản rực rỡ hơn.",
+      "cta": "Khám Phá Bộ Sưu Tập"
+    },
+    "services": {
+      "eyebrow": "Dịch Vụ",
+      "heading": "Bốn hành trình để đến với chiếc váy của bạn"
+    },
+    "ctaBand": {
+      "heading": "Chiếc váy của bạn bắt đầu từ một cuộc trò chuyện.",
+      "body": "Đặt lịch hẹn riêng tại studio Đà Nẵng của chúng tôi và bắt đầu thiết kế chiếc váy bạn sẽ nhớ mãi.",
+      "cta": "Đặt Lịch Ngay"
+    }
+  },
+  "about": {
+    "eyebrow": "Về Clovera Bridal",
+    "heading": "Sự tỉ mỉ thầm lặng, độc bản theo từng thiết kế.",
+    "intro": "Clovera Bridal được thành lập trên một niềm tin đơn giản: váy cưới nên được may theo đúng cách nó được mặc — một lần, trọn vẹn, và không thỏa hiệp.",
+    "body1": "Có trụ sở tại Đà Nẵng, Việt Nam, atelier của chúng tôi kết hợp thiết kế tinh tế, chất liệu được tuyển chọn thủ công, và quy trình thử đồ được xây dựng xoay quanh cô dâu chứ không phải lịch trình. Chúng tôi chủ động nhận số lượng nhỏ, để mỗi chiếc váy — dù may đo, thiết kế riêng, hay chọn từ bộ sưu tập theo mùa — đều nhận được sự chăm chút không vội vã.",
+    "body2": "Hai bộ sưu tập 2026 của chúng tôi, Venus in Bloom và Venus in Flight, song hành cùng dịch vụ thiết kế riêng hoàn toàn dành cho những cô dâu chỉ mang theo một ý tưởng. Trong mọi trường hợp, quy trình vẫn không đổi: trò chuyện trước, phác thảo sau, và một chiếc váy chỉ có thể thuộc về một người duy nhất.",
+    "valuesHeading": "Điều định hướng công việc của chúng tôi",
+    "values": [
+      {
+        "title": "Độc bản",
+        "body": "Không có chiếc váy nào được lặp lại cho hai cô dâu trong cùng một mùa. Những gì bạn mặc được thiết kế chỉ dành riêng cho bạn."
+      },
+      {
+        "title": "Tay nghề thủ công",
+        "body": "Mỗi thiết kế đều được hoàn thiện thủ công qua nhiều buổi thử đồ, với kết cấu được dựng để chuyển động — và bền đẹp — theo thời gian."
+      },
+      {
+        "title": "Vừa vặn cá nhân hóa",
+        "body": "Số đo, chất liệu và form dáng được định hình theo chính bạn, chứ không chỉ điều chỉnh từ một bảng size tiêu chuẩn."
+      }
+    ],
+    "cta": "Đặt Lịch Hẹn"
+  },
+  "services": {
+    "eyebrow": "Dịch Vụ",
+    "heading": "Bốn hành trình để đến với chiếc váy của bạn",
+    "intro": "Từ thiết kế riêng hoàn toàn đến mẫu may sẵn trong lookbook, mọi hành trình đều đi qua cùng một đôi bàn tay và cùng một sự chăm chút.",
+    "items": [
+      {
+        "slug": "made-to-measure",
+        "title": "Váy Cưới May Đo",
+        "description": "Được thiết kế và may đo theo số đo cùng phong cách riêng của bạn. Từ bản phác thảo đến thành phẩm — thủ công, tỉ mỉ và độc bản.",
+        "price": "Liên hệ để biết giá / theo từng thiết kế",
+        "features": [
+          "Tư vấn phong cách 1-1",
+          "Phác thảo thiết kế riêng",
+          "2–3 buổi thử và chỉnh sửa",
+          "Giao hàng trong nước & quốc tế"
+        ],
+        "cta": "Đặt Lịch Tư Vấn"
+      },
+      {
+        "slug": "ready-to-order",
+        "title": "Bộ Sưu Tập May Sẵn Theo Đơn",
+        "description": "Chọn một thiết kế từ Venus in Bloom hoặc Venus in Flight, may theo số đo của bạn với thời gian hoàn thiện nhanh hơn.",
+        "price": "Liên hệ để biết giá / theo từng mẫu",
+        "features": [
+          "Chọn từ lookbook hiện tại",
+          "Số đo riêng theo yêu cầu",
+          "Tùy chỉnh màu sắc & chất liệu",
+          "Hoàn thiện trong 6–12 tuần"
+        ],
+        "cta": "Xem Bộ Sưu Tập"
+      },
+      {
+        "slug": "bespoke-design",
+        "title": "Thiết Kế Riêng (Bespoke)",
+        "description": "Dành cho cô dâu muốn một chiếc váy thực sự của riêng mình — từ ý tưởng trên giấy đến một kiệt tác độc nhất vô nhị.",
+        "price": "Từ 800 USD / tùy độ phức tạp",
+        "features": [
+          "Thiết kế độc quyền 100%",
+          "Chất liệu nhập khẩu cao cấp",
+          "Đã bao gồm vận chuyển quốc tế"
+        ],
+        "cta": "Bắt Đầu Thiết Kế"
+      },
+      {
+        "slug": "bridal-accessories",
+        "title": "Phụ Kiện Cưới",
+        "description": "Hoàn thiện diện mạo của bạn với phụ kiện cưới — voan, phụ kiện cài đầu, đai lưng — được chế tác để tôn lên chiếc váy của bạn.",
+        "price": "Liên hệ / theo từng món",
+        "features": [
+          "Voan cưới (dài / ngắn)",
+          "Phụ kiện cài đầu & vương miện",
+          "Đai lưng đính kết"
+        ],
+        "cta": "Liên Hệ Tư Vấn"
+      }
+    ]
+  },
+  "collections": {
+    "eyebrow": "Bộ Sưu Tập 2026",
+    "heading": "Venus in Bloom & Venus in Flight",
+    "intro": "Hai bộ sưu tập, cùng chung một ý tưởng: cô dâu nên là chính mình — chỉ là một phiên bản rực rỡ hơn.",
+    "items": [
+      {
+        "slug": "venus-in-bloom",
+        "name": "Venus in Bloom",
+        "year": "2026",
+        "tagline": "Kết cấu mềm mại, lãng mạn trong sự tiết chế.",
+        "description": "Venus in Bloom khám phá hình ảnh cô dâu ở phiên bản dịu dàng nhất — form dáng buông rủ, họa tiết hoa được dệt vào chất liệu thay vì đính lên bề mặt, và bảng màu lấy cảm hứng từ ánh sáng đầu ngày. Mỗi thiết kế đều có thể may đo theo lookbook này, với tùy chọn màu sắc và chất liệu riêng."
+      },
+      {
+        "slug": "venus-in-flight",
+        "name": "Venus in Flight",
+        "year": "2026",
+        "tagline": "Chuyển động, được mài giũa bằng sự chính xác.",
+        "description": "Venus in Flight được tạo ra cho cô dâu luôn chuyển động — đường nét kiến trúc thanh thoát, các lớp vải nhẹ tựa không trọng lượng, và kết cấu được dựng để chuyển động cùng cô dâu chứ không cản trở. Mỗi thiết kế đều có thể may đo theo lookbook này, với tùy chọn màu sắc và chất liệu riêng."
+      }
+    ],
+    "cta": "Liên Hệ Về Bộ Sưu Tập Này"
+  },
+  "book": {
+    "eyebrow": "Đặt Lịch Hẹn",
+    "heading": "Bắt đầu từ một cuộc trò chuyện.",
+    "intro": "Hãy cho chúng tôi biết đôi chút về kế hoạch cưới và ngày hẹn bạn mong muốn, studio sẽ xác nhận lịch hẹn qua email trong vòng 1–2 ngày làm việc.",
+    "form": {
+      "name": "Họ và Tên",
+      "namePlaceholder": "Họ và tên của bạn",
+      "email": "Email",
+      "emailPlaceholder": "ban@vidu.com",
+      "phone": "Số Điện Thoại",
+      "phonePlaceholder": "+84 ...",
+      "date": "Ngày Hẹn Mong Muốn",
+      "notes": "Chia sẻ về đám cưới của bạn",
+      "notesPlaceholder": "Ngày cưới, phong cách bạn đang nghĩ tới, dịch vụ bạn quan tâm...",
+      "submit": "Gửi Yêu Cầu Đặt Lịch",
+      "submitting": "Đang gửi...",
+      "successTitle": "Cảm ơn bạn — đã nhận được yêu cầu.",
+      "successBody": "Chúng tôi đã nhận được yêu cầu đặt lịch của bạn và sẽ liên hệ qua email sớm để xác nhận thời gian.",
+      "errorTitle": "Đã có lỗi xảy ra.",
+      "errorBody": "Không thể gửi yêu cầu của bạn. Vui lòng thử lại, hoặc liên hệ trực tiếp qua thông tin bên dưới.",
+      "requiredField": "Vui lòng điền thông tin này.",
+      "invalidEmail": "Vui lòng nhập địa chỉ email hợp lệ."
+    }
+  },
+  "contact": {
+    "eyebrow": "Liên Hệ",
+    "heading": "Ghé thăm studio.",
+    "intro": "Đối với lịch hẹn, chúng tôi khuyến khích đặt trước qua form để studio có thể chuẩn bị cho buổi thử đồ của bạn. Với các nhu cầu khác, vui lòng liên hệ trực tiếp bên dưới.",
+    "addressLabel": "Studio",
+    "addressLine1": "Đà Nẵng, Việt Nam",
+    "addressLine2": "Địa chỉ studio chi tiết sẽ được cập nhật",
+    "emailLabel": "Email",
+    "email": "hello@cloverabridal.com",
+    "phoneLabel": "Điện Thoại",
+    "phone": "Liên hệ studio để biết số điện thoại",
+    "hoursLabel": "Giờ Mở Cửa",
+    "hours": "Theo lịch hẹn, Thứ Ba – Chủ Nhật",
+    "socialLabel": "Theo Dõi"
+  },
+  "legal": {
+    "privacy": {
+      "heading": "Chính Sách Bảo Mật",
+      "updated": "Cập nhật lần cuối: 2026",
+      "body": "Đây là nội dung chính sách bảo mật tạm thời của Clovera Bridal. Vui lòng thay thế phần này bằng quy trình xử lý dữ liệu thực tế của studio — thông tin nào được thu thập qua form đặt lịch và các kênh liên hệ, được lưu trữ ra sao, được chia sẻ với ai (nếu có), và cách khách hàng có thể yêu cầu truy cập hoặc xóa thông tin của mình."
+    },
+    "terms": {
+      "heading": "Điều Khoản & Điều Kiện",
+      "updated": "Cập nhật lần cuối: 2026",
+      "body": "Đây là nội dung điều khoản tạm thời của Clovera Bridal. Vui lòng thay thế phần này bằng chính sách thực tế của studio về đặt cọc, thử đồ, thời gian chỉnh sửa, hủy lịch và giao hàng cho các đơn may đo, thiết kế riêng và may sẵn theo đơn."
+    }
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "heading": "Trang này chưa được thiết kế.",
+    "body": "Trang bạn đang tìm không tồn tại. Hãy để chúng tôi đưa bạn đến nơi khác.",
+    "cta": "Về Trang Chủ"
+  }
+}
