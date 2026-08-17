@@ -31,11 +31,11 @@ All copy is hardcoded and translated, so there's no CMS to log into — content 
 
 ## Photography & video
 
-No real photography has been supplied yet. Every image slot currently renders `<MediaFrame>` ([`src/components/ui/MediaFrame.tsx`](src/components/ui/MediaFrame.tsx)) — an ivory/gold placeholder frame with a "C" monogram, so the site looks intentional rather than broken while photography is pending.
+Real photography and video from the client's shoot are in place:
 
-**To swap in real photos**: replace the relevant `<MediaFrame label="..." />` usage with a `next/image` (`import Image from "next/image"`), pointing at a file placed in `public/`. The component is used consistently across `Hero`, `CollectionsTeaser`, `ServicesTeaser`, the services page, and collection detail galleries — search for `MediaFrame` to find every spot.
-
-**For hero/section video**: there's no video element yet since no footage exists. Once you have a compressed `.mp4`, it's a straightforward swap in `src/components/sections/Hero.tsx` (replace the `MediaFrame` with a `<video>` element with a poster image and `prefers-reduced-motion` fallback).
+- **Collection photos**: `public/collections/venus-in-bloom/lookNN.jpg` and `public/collections/venus-in-flight/lookNN.jpg` — 20 curated shots per collection (selected from a 50-image shoot to avoid near-duplicate frames), resized from the ~55MB camera originals down to 1600×2000 JPEGs (~300–450KB each). Referenced via `getLookImage()` / `getLookImages()` in [`src/content/collections.ts`](src/content/collections.ts). The originals are **not** committed to the repo — only the client's Drive folder holds full-resolution masters.
+- **Video**: `public/video/*.mp4` + `public/video/posters/*.jpg` — transcoded from the client's raw `.mov`/`.mp4` footage (H.264, ~900px wide, faststart) down to a few MB each. Used for the home hero (`intro-1.mp4`), the About page ("Inside the Atelier", `bts-look-1.mp4`), and a "Filmed" section on each collection page (`collectionVideos` in `src/content/collections.ts`). Playback goes through [`src/components/ui/VideoClip.tsx`](src/components/ui/VideoClip.tsx), which falls back to the poster image when `prefers-reduced-motion` is set.
+- The `services` page still uses `<MediaFrame>` ([`src/components/ui/MediaFrame.tsx`](src/components/ui/MediaFrame.tsx)) placeholder tiles, since no service-specific photography was provided — swap the same way (`next/image` pointing at a `public/` file) if that's supplied later.
 
 ## The booking form
 
@@ -51,14 +51,17 @@ Until `SMTP_HOST` / `SMTP_USER` / `SMTP_PASS` / `BOOKING_TO_EMAIL` are all set, 
 
 The route also includes a honeypot field and a simple in-memory rate limit (5 requests / 10 minutes per IP) — sufficient for a single persistent Node.js process (see deployment below), not a distributed setup.
 
+## Brand assets
+
+- **Logo**: `public/logo.png` (full lockup, used in the footer) and `public/logo-icon.png` (cropped mark, used in the header and as the site favicon/`apple-icon`) — sourced from the client's Drive folder.
+- **Typeface**: the brand's own **Displace** family (Light/Regular/Medium/Bold/Black) is self-hosted via `next/font/local` in [`src/lib/fonts.ts`](src/lib/fonts.ts) and mapped to `--font-serif` — used for all headings sitewide.
+- **Gold accent**: `--color-gold` (`#7D5F12`) is a darkened, AA-contrast-safe tint sampled from the logo's actual brand gold; `--color-gold-soft` (`#F3DB9F`) is the exact brand gold, kept for decorative use only since it fails text contrast on the ivory background.
+
 ## Before launch — things intentionally left as placeholders
 
-- [ ] Real photography and video for hero, collections, and services (see above)
-- [ ] Logo file (currently a text wordmark in Playfair Display)
-- [ ] Studio phone number and exact street address (`src/messages/en.json` / `vi.json` → `contact` namespace)
-- [ ] Social links, if any (`src/content/site.ts` → `socialLinks`)
+- [ ] Service page photography (`services` page still uses placeholder tiles — see above)
 - [ ] Real Privacy Policy / Terms content (`legal` namespace in the messages files — currently placeholder text)
-- [ ] SMTP credentials for the booking form (see above)
+- [ ] SMTP credentials for the booking form (see above) — required before launch so appointment requests actually reach `cloverabridal@gmail.com`
 
 ## Deploying to Hostinger
 

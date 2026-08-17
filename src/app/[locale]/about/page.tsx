@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { MediaFrame } from "@/components/ui/MediaFrame";
+import { VideoClip } from "@/components/ui/VideoClip";
 import { Reveal } from "@/components/ui/Reveal";
 import { CtaBand } from "@/components/layout/CtaBand";
 
@@ -36,8 +36,12 @@ export default async function AboutPage({
               body={t("intro")}
             />
           </Reveal>
-          <Reveal delay={0.1}>
-            <MediaFrame label="Clovera Bridal atelier" aspect="aspect-[4/5]" />
+          <Reveal delay={0.1} className="aspect-[4/5] overflow-hidden bg-ink">
+            <VideoClip
+              src="/video/bts-look-1.mp4"
+              poster="/video/posters/bts-look-1.jpg"
+              alt="Inside the Clovera Bridal atelier"
+            />
           </Reveal>
         </div>
       </section>

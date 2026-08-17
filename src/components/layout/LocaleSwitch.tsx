@@ -17,7 +17,7 @@ export function LocaleSwitch({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "flex items-center gap-1 text-xs tracking-[0.1em] text-ink-soft",
+        "flex items-center gap-1 text-xs tracking-[0.1em] text-paper/50",
         className,
       )}
     >
@@ -29,8 +29,8 @@ export function LocaleSwitch({ className }: { className?: string }) {
             onClick={() => router.replace(pathname, { locale: option.code })}
             aria-current={locale === option.code}
             className={cn(
-              "cursor-pointer px-1 py-2 transition-colors hover:text-gold",
-              locale === option.code ? "text-ink" : "text-ink-soft/60",
+              "cursor-pointer px-1 py-2 transition-colors hover:text-gold-soft",
+              locale === option.code ? "text-paper" : "text-paper/50",
             )}
           >
             {option.label}

@@ -1,6 +1,8 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { navLinks, socialLinks } from "@/content/site";
+import { navLinks, socialLinks, contactDetails } from "@/content/site";
+import { SocialIcon } from "@/components/ui/SocialIcon";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -13,8 +15,14 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16 sm:px-8">
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
-            <p className="font-serif text-2xl text-ink">Clovera Bridal</p>
-            <p className="mt-3 max-w-xs text-sm leading-relaxed text-ink-soft">
+            <Image
+              src="/logo.png"
+              alt="Clovera Bridal"
+              width={220}
+              height={168}
+              className="h-16 w-auto sm:h-20"
+            />
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-soft">
               {t("tagline")}
             </p>
           </div>
@@ -43,12 +51,21 @@ export function Footer() {
             </p>
             <ul className="mt-4 space-y-3 text-sm text-ink-soft">
               <li>{tContact("addressLine1")}</li>
+              <li>{tContact("addressLine2")}</li>
               <li>
                 <a
-                  href={`mailto:${tContact("email")}`}
+                  href={`mailto:${contactDetails.email}`}
                   className="transition-colors hover:text-ink"
                 >
-                  {tContact("email")}
+                  {contactDetails.email}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={contactDetails.phoneHref}
+                  className="transition-colors hover:text-ink"
+                >
+                  {contactDetails.phone}
                 </a>
               </li>
             </ul>
@@ -81,20 +98,20 @@ export function Footer() {
                 <p className="mt-8 text-xs uppercase tracking-[0.2em] text-gold">
                   {t("follow")}
                 </p>
-                <ul className="mt-4 space-y-3">
+                <div className="mt-4 flex items-center gap-4">
                   {socialLinks.map((social) => (
-                    <li key={social.name}>
-                      <a
-                        href={social.href}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-sm text-ink-soft transition-colors hover:text-ink"
-                      >
-                        {social.name}
-                      </a>
-                    </li>
+                    <a
+                      key={social.name}
+                      href={social.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={social.name}
+                      className="text-ink-soft transition-colors hover:text-ink"
+                    >
+                      <SocialIcon name={social.icon} className="h-5 w-5" />
+                    </a>
                   ))}
-                </ul>
+                </div>
               </>
             )}
           </div>

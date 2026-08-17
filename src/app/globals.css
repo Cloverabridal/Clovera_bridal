@@ -5,10 +5,20 @@
   --color-ink-soft: #4a4a47;
   --color-paper: #faf9f7;
   --color-paper-raised: #ffffff;
-  --color-gold: #a16207;
-  --color-gold-soft: #c89a4b;
+  /* Deep, AA-contrast-safe tint of the brand gold — used for text/borders on light backgrounds. */
+  --color-gold: #7d5f12;
+  /* Exact brand gold sampled from the Clovera logo — decorative use only (fails text contrast on paper). */
+  --color-gold-soft: #f3db9f;
   --color-line: #e6e1d7;
   --color-line-strong: #d7cfbf;
+
+  /* Displace (the brand display face) has no Vietnamese diacritics, so the
+     Vietnamese locale swaps the heading face to Playfair Display instead. */
+  --font-heading: var(--font-displace);
+}
+
+html[lang="vi"] {
+  --font-heading: var(--font-playfair);
 }
 
 @theme inline {
@@ -21,7 +31,7 @@
   --color-line: var(--color-line);
   --color-line-strong: var(--color-line-strong);
 
-  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-serif: var(--font-heading), Georgia, serif;
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 
   --animate-fade-up: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;

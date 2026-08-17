@@ -1,9 +1,10 @@
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { MediaFrame } from "@/components/ui/MediaFrame";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
+import { getLookImage, type CollectionSlug } from "@/content/collections";
 
 export async function CollectionsTeaser() {
   const t = await getTranslations("home.collections");
@@ -33,11 +34,15 @@ export async function CollectionsTeaser() {
                 href={`/collections/${item.slug}`}
                 className="group block"
               >
-                <MediaFrame
-                  label={`${item.name} ${item.year}`}
-                  aspect="aspect-[4/5]"
-                  className="transition-opacity duration-300 group-hover:opacity-90"
-                />
+                <div className="relative aspect-[4/5] overflow-hidden bg-paper-raised">
+                  <Image
+                    src={getLookImage(item.slug as CollectionSlug, 1)}
+                    alt={`${item.name} ${item.year}`}
+                    fill
+                    sizes="(min-width: 640px) 50vw, 100vw"
+                    className="object-cover transition-opacity duration-300 group-hover:opacity-90"
+                  />
+                </div>
                 <div className="mt-5">
                   <p className="text-xs uppercase tracking-[0.2em] text-gold">
                     {item.year}

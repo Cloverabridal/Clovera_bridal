@@ -3,6 +3,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
+import { contactDetails, socialLinks } from "@/content/site";
+import { SocialIcon } from "@/components/ui/SocialIcon";
 
 export async function generateMetadata({
   params,
@@ -23,8 +25,16 @@ export default async function ContactPage({
 
   const details = [
     { label: t("addressLabel"), lines: [t("addressLine1"), t("addressLine2")] },
-    { label: t("emailLabel"), lines: [t("email")], href: `mailto:${t("email")}` },
-    { label: t("phoneLabel"), lines: [t("phone")] },
+    {
+      label: t("emailLabel"),
+      lines: [contactDetails.email],
+      href: `mailto:${contactDetails.email}`,
+    },
+    {
+      label: t("phoneLabel"),
+      lines: [contactDetails.phone],
+      href: contactDetails.phoneHref,
+    },
     { label: t("hoursLabel"), lines: [t("hours")] },
   ];
 
@@ -64,10 +74,24 @@ export default async function ContactPage({
           ))}
         </div>
 
-        <Reveal delay={0.2} className="mt-16">
+        <Reveal delay={0.2} className="mt-16 flex flex-wrap items-center gap-8">
           <Button href="/book" variant="primary">
             {tCommon("bookAppointment")}
           </Button>
+          <div className="flex items-center gap-5">
+            {socialLinks.map((social) => (
+              <a
+                key={social.name}
+                href={social.href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={social.name}
+                className="text-ink-soft transition-colors hover:text-gold"
+              >
+                <SocialIcon name={social.icon} className="h-5 w-5" />
+              </a>
+            ))}
+          </div>
         </Reveal>
       </div>
     </section>

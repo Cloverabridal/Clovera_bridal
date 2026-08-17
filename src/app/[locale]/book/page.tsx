@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { BookingForm } from "@/components/forms/BookingForm";
+import { contactDetails } from "@/content/site";
 
 export async function generateMetadata({
   params,
@@ -35,12 +36,21 @@ export default async function BookPage({
               {tContact("addressLabel")}
             </p>
             <p>{tContact("addressLine1")}</p>
+            <p>{tContact("addressLine2")}</p>
             <p className="mt-3">
               <a
-                href={`mailto:${tContact("email")}`}
+                href={`mailto:${contactDetails.email}`}
                 className="transition-colors hover:text-ink"
               >
-                {tContact("email")}
+                {contactDetails.email}
+              </a>
+            </p>
+            <p>
+              <a
+                href={contactDetails.phoneHref}
+                className="transition-colors hover:text-ink"
+              >
+                {contactDetails.phone}
               </a>
             </p>
           </div>

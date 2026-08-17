@@ -11,5 +11,15 @@ export const navLinks = [
   { href: "/contact", key: "contact" },
 ] as const;
 
-// TODO: add real handles once the client shares them — icons only render when href is set.
-export const socialLinks: { name: string; href: string }[] = [];
+export const socialLinks = [
+  { name: "Facebook", icon: "facebook", href: "https://www.facebook.com/cloverabridal/" },
+  { name: "Instagram", icon: "instagram", href: "https://www.instagram.com/cloverabridal/" },
+  { name: "TikTok", icon: "tiktok", href: "https://www.tiktok.com/@cloverabridal" },
+] as const;
+
+export const contactDetails = {
+  email: "cloverabridal@gmail.com",
+  phone: "+84 96 988 21 57",
+  phoneHref: "tel:+84969882157",
+  address: "27 Đinh Gia Trinh, Da Nang",
+};
