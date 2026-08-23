@@ -4,13 +4,19 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { BookingForm } from "@/components/forms/BookingForm";
 import { contactDetails } from "@/content/site";
+import { pageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
 }: PageProps<"/[locale]/book">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "book" });
-  return { title: t("heading"), description: t("intro") };
+  return pageMetadata({
+    locale,
+    path: "/book",
+    title: t("heading"),
+    description: t("intro"),
+  });
 }
 
 export default async function BookPage({

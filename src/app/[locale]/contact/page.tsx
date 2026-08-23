@@ -5,13 +5,19 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { contactDetails, socialLinks } from "@/content/site";
 import { SocialIcon } from "@/components/ui/SocialIcon";
+import { pageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
 }: PageProps<"/[locale]/contact">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "contact" });
-  return { title: t("heading"), description: t("intro") };
+  return pageMetadata({
+    locale,
+    path: "/contact",
+    title: t("heading"),
+    description: t("intro"),
+  });
 }
 
 export default async function ContactPage({

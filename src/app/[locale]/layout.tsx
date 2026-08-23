@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { siteConfig } from "@/content/site";
 import { displace, playfair, inter } from "@/lib/fonts";
+import { pageMetadata } from "@/lib/seo";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import "../globals.css";
@@ -18,25 +19,19 @@ export async function generateMetadata({
 }: LayoutProps<"/[locale]">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
+  const base = pageMetadata({
+    locale,
+    path: "",
+    title: t("defaultTitle"),
+    description: t("description"),
+  });
 
   return {
+    ...base,
     metadataBase: new URL(siteConfig.url),
     title: {
       template: t("titleTemplate"),
       default: t("defaultTitle"),
-    },
-    description: t("description"),
-    alternates: {
-      canonical: "/",
-      languages: { en: "/", vi: "/vi" },
-    },
-    openGraph: {
-      title: t("defaultTitle"),
-      description: t("description"),
-      url: siteConfig.url,
-      siteName: siteConfig.name,
-      locale,
-      type: "website",
     },
   };
 }

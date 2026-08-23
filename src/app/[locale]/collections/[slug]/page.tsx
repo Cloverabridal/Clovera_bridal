@@ -15,6 +15,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { VideoClip } from "@/components/ui/VideoClip";
 import { CtaBand } from "@/components/layout/CtaBand";
+import { pageMetadata } from "@/lib/seo";
 
 type Collection = {
   slug: string;
@@ -42,7 +43,12 @@ export async function generateMetadata({
   const { locale, slug } = await params;
   const collection = await getCollection(locale, slug);
   if (!collection) return {};
-  return { title: collection.name, description: collection.tagline };
+  return pageMetadata({
+    locale,
+    path: `/collections/${slug}`,
+    title: collection.name,
+    description: collection.tagline,
+  });
 }
 
 export default async function CollectionDetailPage({

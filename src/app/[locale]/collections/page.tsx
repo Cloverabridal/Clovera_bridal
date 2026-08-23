@@ -6,13 +6,19 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { CtaBand } from "@/components/layout/CtaBand";
 import { getLookImage, type CollectionSlug } from "@/content/collections";
+import { pageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
 }: PageProps<"/[locale]/collections">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "collections" });
-  return { title: t("heading"), description: t("intro") };
+  return pageMetadata({
+    locale,
+    path: "/collections",
+    title: t("heading"),
+    description: t("intro"),
+  });
 }
 
 type Collection = {

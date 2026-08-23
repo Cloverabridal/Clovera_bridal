@@ -4,13 +4,19 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { VideoClip } from "@/components/ui/VideoClip";
 import { Reveal } from "@/components/ui/Reveal";
 import { CtaBand } from "@/components/layout/CtaBand";
+import { pageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
 }: PageProps<"/[locale]/about">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "about" });
-  return { title: t("heading"), description: t("intro") };
+  return pageMetadata({
+    locale,
+    path: "/about",
+    title: t("heading"),
+    description: t("intro"),
+  });
 }
 
 type Value = { title: string; body: string };

@@ -6,13 +6,19 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { CtaBand } from "@/components/layout/CtaBand";
 import { serviceImages, type ServiceSlug } from "@/content/collections";
+import { pageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
 }: PageProps<"/[locale]/services">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "services" });
-  return { title: t("heading"), description: t("intro") };
+  return pageMetadata({
+    locale,
+    path: "/services",
+    title: t("heading"),
+    description: t("intro"),
+  });
 }
 
 type Service = {
