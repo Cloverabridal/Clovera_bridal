@@ -46,6 +46,7 @@ export default async function ContactPage({
             eyebrow={t("eyebrow")}
             heading={t("heading")}
             body={t("intro")}
+            size="sm"
           />
         </Reveal>
 

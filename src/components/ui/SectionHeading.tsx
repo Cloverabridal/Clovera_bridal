@@ -8,6 +8,13 @@ type SectionHeadingProps = {
   align?: "left" | "center";
   className?: string;
   as?: "h1" | "h2" | "h3";
+  size?: "sm" | "md" | "lg";
+};
+
+const headingSizes = {
+  lg: "text-4xl sm:text-5xl",
+  md: "text-3xl sm:text-4xl",
+  sm: "text-2xl sm:text-3xl",
 };
 
 export function SectionHeading({
@@ -17,6 +24,7 @@ export function SectionHeading({
   align = "left",
   className,
   as: Heading = "h2",
+  size = "lg",
 }: SectionHeadingProps) {
   return (
     <div
@@ -31,7 +39,12 @@ export function SectionHeading({
           {eyebrow}
         </p>
       )}
-      <Heading className="font-serif text-4xl leading-[1.1] text-ink sm:text-5xl">
+      <Heading
+        className={cn(
+          "font-serif leading-[1.1] text-ink",
+          headingSizes[size],
+        )}
+      >
         {heading}
       </Heading>
       {body && (

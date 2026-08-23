@@ -19,7 +19,7 @@ export function CtaBand({
   className,
 }: CtaBandProps) {
   return (
-    <section className={cn("bg-ink py-24 text-paper sm:py-28", className)}>
+    <section className={cn("bg-surface-dark py-24 text-paper sm:py-28", className)}>
       <Reveal className="mx-auto max-w-2xl px-6 text-center sm:px-8">
         <h2 className="font-serif text-3xl leading-tight sm:text-4xl">
           {heading}

@@ -31,7 +31,6 @@ export const collectionVideos: Record<
     { src: "/video/intro-2.mp4", poster: "/video/posters/intro-2.jpg" },
     { src: "/video/bloom-look-1.mp4", poster: "/video/posters/bloom-look-1.jpg" },
     { src: "/video/bloom-look-2.mp4", poster: "/video/posters/bloom-look-2.jpg" },
-    { src: "/video/bloom-look-21.mp4", poster: "/video/posters/bloom-look-21.jpg" },
   ],
   "venus-in-flight": [
     { src: "/video/flight-look-3.mp4", poster: "/video/posters/flight-look-3.jpg" },
@@ -40,22 +39,30 @@ export const collectionVideos: Record<
   ],
 };
 
-// Home hero slideshow: cycles through Bloom clips first, then Flight.
+// Home hero slideshow: leads with actual Venus in Bloom gown footage,
+// then transitions into Venus in Flight.
 export const heroClips: { src: string; poster: string }[] = [
-  { src: "/video/intro-1.mp4", poster: "/video/posters/intro-1.jpg" },
-  { src: "/video/intro-2.mp4", poster: "/video/posters/intro-2.jpg" },
   { src: "/video/bloom-look-1.mp4", poster: "/video/posters/bloom-look-1.jpg" },
   { src: "/video/bloom-look-2.mp4", poster: "/video/posters/bloom-look-2.jpg" },
+  { src: "/video/bloom-look-21.mp4", poster: "/video/posters/bloom-look-21.jpg" },
   { src: "/video/flight-look-3.mp4", poster: "/video/posters/flight-look-3.jpg" },
   { src: "/video/flight-look-5.mp4", poster: "/video/posters/flight-look-5.jpg" },
   { src: "/video/flight-look-7.mp4", poster: "/video/posters/flight-look-7.jpg" },
 ];
 
 export const serviceSlugs = [
+  "rental",
   "made-to-measure",
-  "ready-to-order",
-  "bespoke-design",
-  "bridal-accessories",
+  "custom-made",
+  "worldwide-shipping",
 ] as const;
 
 export type ServiceSlug = (typeof serviceSlugs)[number];
+
+// One representative photo per service, pulled from the two collections.
+export const serviceImages: Record<ServiceSlug, string> = {
+  rental: getLookImage("venus-in-bloom", 9),
+  "made-to-measure": getLookImage("venus-in-flight", 6),
+  "custom-made": getLookImage("venus-in-bloom", 15),
+  "worldwide-shipping": getLookImage("venus-in-flight", 18),
+};

@@ -40,7 +40,7 @@ export default async function AboutPage({
             <VideoClip
               src="/video/bts-look-1.mp4"
               poster="/video/posters/bts-look-1.jpg"
-              alt="Inside the Clovera Bridal atelier"
+              alt="Inside CLOVERA Bridal"
             />
           </Reveal>
         </div>

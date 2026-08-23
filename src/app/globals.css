@@ -11,6 +11,10 @@
   --color-gold-soft: #f3db9f;
   --color-line: #e6e1d7;
   --color-line-strong: #d7cfbf;
+  /* Deep emerald marble tone from the logo's background — used for dark
+     sections (header, hero overlay, CTA band) instead of flat black. */
+  --color-surface-dark: #0e2a20;
+  --color-surface-dark-soft: #163a2c;
 
   /* Displace (the brand display face) has no Vietnamese diacritics, so the
      Vietnamese locale swaps the heading face to Playfair Display instead. */
@@ -30,6 +34,8 @@ html[lang="vi"] {
   --color-gold-soft: var(--color-gold-soft);
   --color-line: var(--color-line);
   --color-line-strong: var(--color-line-strong);
+  --color-surface-dark: var(--color-surface-dark);
+  --color-surface-dark-soft: var(--color-surface-dark-soft);
 
   --font-serif: var(--font-heading), Georgia, serif;
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;

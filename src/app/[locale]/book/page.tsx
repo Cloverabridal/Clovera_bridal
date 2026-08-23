@@ -30,6 +30,7 @@ export default async function BookPage({
             eyebrow={t("eyebrow")}
             heading={t("heading")}
             body={t("intro")}
+            size="sm"
           />
           <div className="mt-10 space-y-1 text-sm text-ink-soft">
             <p className="text-xs uppercase tracking-[0.2em] text-gold">

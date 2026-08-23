@@ -33,7 +33,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-ink text-paper">
+    <header className="sticky top-0 z-50 bg-surface-dark text-paper">
       {/* Utility bar */}
       <div className="hidden border-b border-paper/10 lg:block">
         <div className="mx-auto flex h-10 max-w-7xl items-center justify-between px-6 sm:px-8">
@@ -145,7 +145,7 @@ export function Header() {
       {open && (
         <nav
           id="mobile-nav"
-          className="border-t border-paper/10 bg-ink px-6 pb-8 pt-2 lg:hidden"
+          className="border-t border-paper/10 bg-surface-dark px-6 pb-8 pt-2 lg:hidden"
         >
           <ul className="flex flex-col divide-y divide-paper/10">
             {navLinks.map((link) => (

@@ -16,7 +16,7 @@ export function Footer() {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <Image
-              src="/logo.png"
+              src="/logo-black.png"
               alt="Clovera Bridal"
               width={220}
               height={168}

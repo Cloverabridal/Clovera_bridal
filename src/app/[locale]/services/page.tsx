@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
-import { MediaFrame } from "@/components/ui/MediaFrame";
 import { CtaBand } from "@/components/layout/CtaBand";
+import { serviceImages, type ServiceSlug } from "@/content/collections";
 
 export async function generateMetadata({
   params,
@@ -57,10 +58,15 @@ export default async function ServicesPage({
           >
             <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 sm:px-8 lg:grid-cols-2 lg:gap-16">
               <Reveal className={imageFirst ? "lg:order-2" : ""}>
-                <MediaFrame
-                  label={service.title}
-                  aspect="aspect-[4/5]"
-                />
+                <div className="relative aspect-[4/5] overflow-hidden bg-paper-raised">
+                  <Image
+                    src={serviceImages[service.slug as ServiceSlug]}
+                    alt={service.title}
+                    fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
               </Reveal>
 
               <Reveal
