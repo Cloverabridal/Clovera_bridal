@@ -8,7 +8,7 @@ export type CollectionSlug = (typeof collectionSlugs)[number];
 // used on teaser cards and the collections index.
 export const collectionLookCounts: Record<CollectionSlug, number> = {
   "venus-in-bloom": 30,
-  "venus-in-flight": 30,
+  "venus-in-flight": 31,
 };
 
 export function getLookImage(slug: CollectionSlug, look: number) {
