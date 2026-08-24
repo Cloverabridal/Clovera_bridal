@@ -13,8 +13,8 @@ export function Footer() {
   return (
     <footer className="border-t border-line bg-paper">
       <div className="mx-auto max-w-7xl px-6 py-16 sm:px-8">
-        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="lg:col-span-1">
+        <div className="flex flex-col gap-12 sm:flex-row sm:flex-wrap sm:justify-between">
+          <div className="sm:max-w-[220px]">
             <Image
               src="/logo-black.png"
               alt="Clovera Bridal"
