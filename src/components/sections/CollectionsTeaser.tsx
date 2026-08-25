@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
-import { getLookImage, type CollectionSlug } from "@/content/collections";
+import { getCoverImage, type CollectionSlug } from "@/content/collections";
 
 export async function CollectionsTeaser() {
   const t = await getTranslations("home.collections");
@@ -36,7 +36,7 @@ export async function CollectionsTeaser() {
               >
                 <div className="relative aspect-[4/5] overflow-hidden bg-paper-raised">
                   <Image
-                    src={getLookImage(item.slug as CollectionSlug, 1)}
+                    src={getCoverImage(item.slug as CollectionSlug)}
                     alt={`${item.name} ${item.year}`}
                     fill
                     sizes="(min-width: 640px) 50vw, 100vw"

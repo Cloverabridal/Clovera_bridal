@@ -15,6 +15,13 @@ export function getLookImage(slug: CollectionSlug, look: number) {
   return `/collections/${slug}/look${String(look).padStart(2, "0")}.jpg`;
 }
 
+// Fixed teaser/cover shot per collection (shown on the home page and the
+// collections index) — kept independent of the gallery's look order so
+// reordering the full lookbook never changes the cover photo.
+export function getCoverImage(slug: CollectionSlug) {
+  return `/collections/${slug}/cover.jpg`;
+}
+
 export function getLookImages(slug: CollectionSlug) {
   return Array.from({ length: collectionLookCounts[slug] }, (_, i) =>
     getLookImage(slug, i + 1),
