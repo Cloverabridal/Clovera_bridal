@@ -12,9 +12,9 @@ export function Footer() {
 
   return (
     <footer className="border-t border-line bg-paper">
-      <div className="mx-auto max-w-7xl px-6 py-16 sm:px-8">
-        <div className="flex flex-col gap-12 sm:flex-row sm:flex-wrap sm:justify-between">
-          <div className="sm:max-w-[220px]">
+      <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8">
+        <div className="grid grid-cols-1 gap-y-14 sm:grid-cols-[1.3fr_0.85fr_1.15fr_0.85fr] sm:gap-x-10 lg:gap-x-16">
+          <div>
             <Image
               src="/logo-black.png"
               alt="Clovera Bridal"
@@ -27,7 +27,7 @@ export function Footer() {
             </p>
           </div>
 
-          <div>
+          <div className="sm:border-l sm:border-line sm:pl-10 lg:pl-14">
             <p className="text-xs uppercase tracking-[0.2em] text-gold">
               {t("explore")}
             </p>
@@ -45,7 +45,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="sm:border-l sm:border-line sm:pl-10 lg:pl-14">
             <p className="text-xs uppercase tracking-[0.2em] text-gold">
               {t("studio")}
             </p>
@@ -71,7 +71,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="sm:border-l sm:border-line sm:pl-10 lg:pl-14">
             <p className="text-xs uppercase tracking-[0.2em] text-gold">
               {t("legal")}
             </p>
@@ -117,8 +117,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 border-t border-line pt-8 text-xs text-ink-soft/70">
-          © {year} Clovera Bridal. {t("rights")}
+        <div className="mt-16 flex flex-col gap-2 border-t border-line pt-8 text-xs text-ink-soft/70 sm:flex-row sm:items-center sm:justify-between">
+          <p>
+            © {year} Clovera Bridal. {t("rights")}
+          </p>
+          <p className="text-ink-soft/50">Da Nang, Vietnam</p>
         </div>
       </div>
     </footer>
