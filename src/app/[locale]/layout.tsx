@@ -9,6 +9,8 @@ import { pageMetadata } from "@/lib/seo";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ScrollToTop } from "@/components/ui/ScrollToTop";
+import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
+import { StructuredData } from "@/components/seo/StructuredData";
 import "../globals.css";
 
 export function generateStaticParams() {
@@ -67,8 +69,10 @@ export default async function LocaleLayout({
             {children}
           </main>
           <Footer />
+          <WhatsAppButton />
           <ScrollToTop />
         </NextIntlClientProvider>
+        <StructuredData />
       </body>
     </html>
   );

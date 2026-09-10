@@ -29,6 +29,10 @@ export default async function ContactPage({
   const t = await getTranslations("contact");
   const tCommon = await getTranslations("common");
 
+  const mapQuery = encodeURIComponent(
+    "27 Đinh Gia Trinh, Hòa Xuân, Đà Nẵng",
+  );
+
   const details = [
     { label: t("addressLabel"), lines: [t("addressLine1"), t("addressLine2")] },
     {
@@ -80,6 +84,31 @@ export default async function ContactPage({
             </Reveal>
           ))}
         </div>
+
+        <Reveal delay={0.15} className="mt-16">
+          <div className="flex items-baseline justify-between">
+            <p className="text-xs uppercase tracking-[0.2em] text-gold">
+              {t("mapLabel")}
+            </p>
+            <a
+              href={`https://www.google.com/maps/dir/?api=1&destination=${mapQuery}`}
+              target="_blank"
+              rel="noreferrer"
+              className="text-xs uppercase tracking-[0.14em] text-ink-soft transition-colors hover:text-gold"
+            >
+              {t("directions")} →
+            </a>
+          </div>
+          <div className="mt-4 aspect-[16/10] w-full overflow-hidden border border-line bg-paper-raised sm:aspect-[16/7]">
+            <iframe
+              title={t("mapLabel")}
+              src={`https://maps.google.com/maps?q=${mapQuery}&z=16&output=embed`}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="h-full w-full"
+            />
+          </div>
+        </Reveal>
 
         <Reveal delay={0.2} className="mt-16 flex flex-wrap items-center gap-8">
           <Button href="/book" variant="primary">

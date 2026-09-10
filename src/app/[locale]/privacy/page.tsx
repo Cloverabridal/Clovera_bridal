@@ -12,7 +12,7 @@ export async function generateMetadata({
     locale,
     path: "/privacy",
     title: t("heading"),
-    description: t("body"),
+    description: t("summary"),
   });
 }
 
@@ -27,7 +27,8 @@ export default async function PrivacyPage({
     <LegalContent
       heading={t("heading")}
       updated={t("updated")}
-      body={t("body")}
+      intro={t("intro")}
+      sections={t.raw("sections") as { heading?: string; body: string }[]}
     />
   );
 }

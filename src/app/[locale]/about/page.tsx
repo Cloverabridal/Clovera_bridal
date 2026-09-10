@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { VideoClip } from "@/components/ui/VideoClip";
 import { Reveal } from "@/components/ui/Reveal";
 import { CtaBand } from "@/components/layout/CtaBand";
 import { pageMetadata } from "@/lib/seo";
@@ -42,20 +42,38 @@ export default async function AboutPage({
               body={t("intro")}
             />
           </Reveal>
-          <Reveal delay={0.1} className="aspect-[4/5] overflow-hidden bg-ink">
-            <VideoClip
-              src="/video/bts-look-1.mp4"
-              poster="/video/posters/bts-look-1.jpg"
-              alt="Inside CLOVERA Bridal"
+          <Reveal
+            delay={0.1}
+            className="relative aspect-[4/5] overflow-hidden bg-paper-raised"
+          >
+            <Image
+              src="/about/storefront.jpg"
+              alt={t("storefrontAlt")}
+              fill
+              sizes="(min-width: 1024px) 44vw, 100vw"
+              className="object-cover"
+              priority
             />
           </Reveal>
         </div>
       </section>
 
       <section className="py-20 sm:py-24">
-        <div className="mx-auto max-w-2xl px-6 sm:px-8">
-          <Reveal>
-            <p className="text-base leading-relaxed text-ink-soft">
+        <div className="mx-auto grid max-w-7xl gap-12 px-6 sm:px-8 lg:grid-cols-[1fr_1.1fr] lg:items-center lg:gap-16">
+          <Reveal className="relative aspect-[4/5] overflow-hidden bg-paper-raised">
+            <Image
+              src="/about/vitrine.jpg"
+              alt={t("storyImageAlt")}
+              fill
+              sizes="(min-width: 1024px) 40vw, 100vw"
+              className="object-cover"
+            />
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="text-xs uppercase tracking-[0.25em] text-gold">
+              {t("storyEyebrow")}
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-ink-soft">
               {t("body1")}
             </p>
             <p className="mt-6 text-base leading-relaxed text-ink-soft">
@@ -66,6 +84,44 @@ export default async function AboutPage({
       </section>
 
       <section className="border-t border-line bg-paper-raised py-20 sm:py-24">
+        <div className="mx-auto max-w-7xl px-6 sm:px-8">
+          <Reveal className="max-w-2xl">
+            <p className="text-xs uppercase tracking-[0.25em] text-gold">
+              {t("spaceEyebrow")}
+            </p>
+            <h2 className="mt-3 font-serif text-3xl text-ink sm:text-4xl">
+              {t("spaceHeading")}
+            </h2>
+            <p className="mt-6 text-base leading-relaxed text-ink-soft">
+              {t("spaceBody")}
+            </p>
+          </Reveal>
+
+          <div className="mt-12 grid gap-4 sm:grid-cols-3 sm:gap-6">
+            {[
+              { src: "/about/alcove.jpg", alt: t("spaceImageAlt1") },
+              { src: "/about/gown-wall.jpg", alt: t("spaceImageAlt2") },
+              { src: "/about/hangers.jpg", alt: t("spaceImageAlt3") },
+            ].map((img, index) => (
+              <Reveal
+                key={img.src}
+                delay={index * 0.08}
+                className="relative aspect-[4/5] overflow-hidden bg-paper"
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  sizes="(min-width: 640px) 30vw, 100vw"
+                  className="object-cover"
+                />
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-line py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 sm:px-8">
           <Reveal>
             <h2 className="font-serif text-3xl text-ink sm:text-4xl">

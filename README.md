@@ -57,11 +57,13 @@ The route also includes a honeypot field and a simple in-memory rate limit (5 re
 - **Typeface**: the brand's own **Displace** family (Light/Regular/Medium/Bold/Black) is self-hosted via `next/font/local` in [`src/lib/fonts.ts`](src/lib/fonts.ts) and mapped to `--font-serif` — used for all headings sitewide.
 - **Gold accent**: `--color-gold` (`#7D5F12`) is a darkened, AA-contrast-safe tint sampled from the logo's actual brand gold; `--color-gold-soft` (`#F3DB9F`) is the exact brand gold, kept for decorative use only since it fails text contrast on the ivory background.
 
-## Before launch — things intentionally left as placeholders
+## Before launch
 
-- [ ] Service page photography (`services` page still uses placeholder tiles — see above)
-- [ ] Real Privacy Policy / Terms content (`legal` namespace in the messages files — currently placeholder text)
-- [ ] SMTP credentials for the booking form (see above) — required before launch so appointment requests actually reach `cloverabridal@gmail.com`
+- [x] Service page photography — now uses real collection photography (`serviceImages` in `src/content/collections.ts`)
+- [x] Real Privacy Policy / Terms content — `legal` namespace now holds full drafted policies (EN + VI). **Have a lawyer confirm the specifics** before launch: deposit amounts and payment schedule, cancellation windows, rental security deposit / damage terms, and the governing-law clause.
+- [x] SMTP credentials for the booking form — configured (Gmail App Password) on the host's environment variables
+- [ ] `StructuredData` (`src/components/seo/StructuredData.tsx`) — confirm the opening hours (currently 09:00–18:00 Mon–Sun) and the geo coordinates match the real showroom
+- [ ] Customer-facing confirmation email after a booking (currently only the studio is notified)
 
 ## Deploying to Hostinger
 

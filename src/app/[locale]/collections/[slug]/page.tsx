@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
@@ -14,6 +13,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { VideoClip } from "@/components/ui/VideoClip";
+import { GalleryLightbox } from "@/components/collections/GalleryLightbox";
 import { CtaBand } from "@/components/layout/CtaBand";
 import { pageMetadata } from "@/lib/seo";
 
@@ -89,22 +89,7 @@ export default async function CollectionDetailPage({
 
       <section className="py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 sm:px-8">
-          <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3">
-            {images.map((src, index) => (
-              <Reveal key={src} delay={(index % 3) * 0.06}>
-                <div className="relative aspect-[3/4] overflow-hidden bg-paper-raised">
-                  <Image
-                    src={src}
-                    alt={`${collection.name} — Look ${String(index + 1).padStart(2, "0")}`}
-                    fill
-                    sizes="(min-width: 1024px) 33vw, 50vw"
-                    className="object-cover"
-                    priority={index < 2}
-                  />
-                </div>
-              </Reveal>
-            ))}
-          </div>
+          <GalleryLightbox images={images} name={collection.name} />
         </div>
       </section>
 

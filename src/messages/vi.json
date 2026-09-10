@@ -31,7 +31,12 @@
     "viewCollection": "Xem Bộ Sưu Tập",
     "backToCollections": "Quay Lại Bộ Sưu Tập",
     "backToTop": "Lên đầu trang",
-    "imagePlaceholder": "Hình ảnh sẽ được cập nhật sớm"
+    "imagePlaceholder": "Hình ảnh sẽ được cập nhật sớm",
+    "whatsappMessage": "Xin chào Clovera Bridal, tôi muốn hỏi về các mẫu váy cưới và dịch vụ của bên mình.",
+    "whatsappAria": "Nhắn tin với Clovera Bridal qua WhatsApp",
+    "close": "Đóng",
+    "previous": "Trước",
+    "next": "Sau"
   },
   "home": {
     "hero": {
@@ -65,8 +70,17 @@
     "eyebrow": "Về Clovera Bridal",
     "heading": "Sự tỉ mỉ thầm lặng, độc bản theo từng thiết kế.",
     "intro": "Clovera Bridal được thành lập trên một niềm tin đơn giản: váy cưới nên được may theo đúng cách nó được mặc — một lần, trọn vẹn, và không thỏa hiệp.",
+    "storefrontAlt": "Cửa hàng Clovera Bridal tại Đà Nẵng",
+    "storyEyebrow": "Về Nhà Mốt",
     "body1": "Có trụ sở tại Đà Nẵng, Việt Nam, CLOVERA Bridal kết hợp thiết kế tinh tế, chất liệu được tuyển chọn thủ công, và quy trình thử đồ được xây dựng xoay quanh cô dâu chứ không phải lịch trình. Chúng tôi chủ động nhận số lượng nhỏ, để mỗi chiếc váy — dù may đo, thiết kế riêng, hay chọn từ bộ sưu tập theo mùa — đều nhận được sự chăm chút không vội vã.",
     "body2": "Hai bộ sưu tập 2026 của chúng tôi, Venus in Bloom và Venus in Flight, song hành cùng dịch vụ thiết kế riêng hoàn toàn dành cho những cô dâu chỉ mang theo một ý tưởng. Trong mọi trường hợp, quy trình vẫn không đổi: trò chuyện trước, phác thảo sau, và một chiếc váy chỉ có thể thuộc về một người duy nhất.",
+    "storyImageAlt": "Một chiếc váy Clovera trong tủ trưng bày tại showroom",
+    "spaceEyebrow": "Không Gian Showroom",
+    "spaceHeading": "Một không gian tĩnh lặng giữa Đà Nẵng, dành riêng cho từng cô dâu.",
+    "spaceBody": "Showroom của chúng tôi trên đường Đinh Gia Trinh được hoàn thiện theo đúng cách chúng tôi hoàn thiện một chiếc váy — tường xanh emerald đậm, ánh sáng tự nhiên dịu, và không gian để thở. Mỗi buổi hẹn đều riêng tư: một cô dâu, những người cô ấy mang theo, và trọn vẹn sự tập trung của đội ngũ, với các bộ sưu tập hiện tại cùng thư viện chất liệu ngay trong tầm tay.",
+    "spaceImageAlt1": "Góc thử đồ màu xanh emerald tại Clovera Bridal",
+    "spaceImageAlt2": "Một chiếc váy Clovera trưng bày trên nền tường showroom",
+    "spaceImageAlt3": "Móc treo in thương hiệu Clovera Bridal trên thanh treo mạ vàng",
     "valuesHeading": "Điều định hướng công việc của chúng tôi",
     "values": [
       {
@@ -199,18 +213,134 @@
     "phoneLabel": "Hotline",
     "hoursLabel": "Giờ Mở Cửa",
     "hours": "Theo lịch hẹn, Thứ Hai – Chủ Nhật",
-    "socialLabel": "Theo Dõi"
+    "socialLabel": "Theo Dõi",
+    "mapLabel": "Tìm đường đến showroom",
+    "directions": "Chỉ đường"
   },
   "legal": {
     "privacy": {
       "heading": "Chính Sách Bảo Mật",
-      "updated": "Cập nhật lần cuối: 2026",
-      "body": "Đây là nội dung chính sách bảo mật tạm thời của Clovera Bridal. Vui lòng thay thế phần này bằng quy trình xử lý dữ liệu thực tế của CLOVERA Bridal — thông tin nào được thu thập qua form đặt lịch và các kênh liên hệ, được lưu trữ ra sao, được chia sẻ với ai (nếu có), và cách khách hàng có thể yêu cầu truy cập hoặc xóa thông tin của mình."
+      "updated": "Cập nhật lần cuối: Tháng 9 năm 2026",
+      "summary": "Cách Clovera Bridal thu thập, sử dụng và bảo vệ thông tin bạn cung cấp khi liên hệ hoặc đặt lịch hẹn.",
+      "intro": "Chính Sách Bảo Mật này giải thích cách Clovera Bridal (\"chúng tôi\") xử lý thông tin cá nhân khi bạn truy cập cloverabridal.com, liên hệ với chúng tôi, hoặc đặt lịch hẹn. Chúng tôi chỉ thu thập ở mức tối thiểu cần thiết để phản hồi bạn và cung cấp dịch vụ.",
+      "sections": [
+        {
+          "heading": "Thông tin chúng tôi thu thập",
+          "body": "Khi bạn gửi form đặt lịch, chúng tôi thu thập họ tên, địa chỉ email, số điện thoại, ngày hẹn mong muốn, và bất kỳ chi tiết nào bạn chọn chia sẻ về đám cưới của mình. Nếu bạn liên hệ qua email, điện thoại hoặc mạng xã hội, chúng tôi nhận được thông tin bạn ghi trong tin nhắn đó. Chúng tôi không yêu cầu bạn tạo tài khoản."
+        },
+        {
+          "heading": "Cách chúng tôi sử dụng thông tin",
+          "body": "Chúng tôi chỉ dùng thông tin của bạn để phản hồi yêu cầu, sắp xếp và chuẩn bị cho buổi hẹn, cung cấp dịch vụ cho thuê váy, may đo, thiết kế riêng và vận chuyển, cũng như trao đổi với bạn về đơn hàng. Chúng tôi không dùng cho mục đích quảng cáo và không bán thông tin."
+        },
+        {
+          "heading": "Cơ sở pháp lý",
+          "body": "Chúng tôi xử lý thông tin dựa trên sự đồng ý của bạn khi bạn liên hệ, và để thực hiện các bước theo yêu cầu của bạn trước khi ký thỏa thuận dịch vụ. Với các hồ sơ giới hạn về yêu cầu và đơn hàng trước đây, chúng tôi lưu vì lợi ích chính đáng trong việc vận hành doanh nghiệp và bảo đảm chất lượng công việc."
+        },
+        {
+          "heading": "Chia sẻ thông tin",
+          "body": "Chúng tôi chỉ chia sẻ thông tin cá nhân với các bên hỗ trợ vận hành — ví dụ nhà cung cấp email, đơn vị lưu trữ website, và với đơn hàng vận chuyển là đơn vị chuyển phát cùng bất kỳ đại lý hải quan nào cần thiết để giao đến bạn. Các bên này chỉ được dùng thông tin để thực hiện dịch vụ cho chúng tôi. Chúng tôi cũng có thể tiết lộ thông tin khi pháp luật yêu cầu."
+        },
+        {
+          "heading": "Chuyển dữ liệu quốc tế",
+          "body": "Chúng tôi đặt tại Việt Nam và phục vụ khách hàng trên toàn thế giới. Nếu bạn liên hệ từ quốc gia khác, thông tin của bạn sẽ được chuyển đến và xử lý tại Việt Nam, và bởi các nhà cung cấp dịch vụ có thể đặt ở nơi khác. Chúng tôi thực hiện các bước hợp lý để bảo vệ thông tin ở bất kỳ nơi nào nó được xử lý."
+        },
+        {
+          "heading": "Cookie và phân tích",
+          "body": "Website này không dùng cookie quảng cáo hay cookie theo dõi của bên thứ ba. Website lưu một tùy chọn nhỏ trong trình duyệt để ghi nhớ ngôn ngữ bạn chọn. Bản đồ nhúng và video nhúng (nếu có) do Google cung cấp và có thể đặt cookie riêng khi bạn tương tác với chúng."
+        },
+        {
+          "heading": "Thời gian lưu trữ",
+          "body": "Chúng tôi chỉ lưu chi tiết yêu cầu và lịch hẹn trong thời gian cần thiết để hỗ trợ bạn và, nếu bạn trở thành khách hàng, trong suốt đơn hàng cộng một khoảng thời gian hợp lý sau đó cho mục đích kế toán và hậu mãi. Chúng tôi xóa hoặc ẩn danh thông tin không còn cần đến."
+        },
+        {
+          "heading": "Quyền của bạn",
+          "body": "Bạn có thể yêu cầu chúng tôi xác nhận thông tin đang lưu về bạn, chỉnh sửa, hoặc xóa thông tin đó, và bạn có thể rút lại sự đồng ý cho việc liên hệ tiếp theo bất kỳ lúc nào. Vui lòng gửi email tới cloverabridal@gmail.com và chúng tôi sẽ phản hồi sớm nhất có thể."
+        },
+        {
+          "heading": "Bảo mật",
+          "body": "Yêu cầu đặt lịch được gửi đến hộp thư doanh nghiệp riêng qua kết nối được mã hóa, và chúng tôi giới hạn quyền truy cập thông tin cho những người cần đến để hỗ trợ bạn. Không có phương thức truyền hay lưu trữ nào tuyệt đối an toàn, nhưng chúng tôi áp dụng các biện pháp hợp lý để bảo vệ."
+        },
+        {
+          "heading": "Trẻ vị thành niên",
+          "body": "Dịch vụ và website của chúng tôi dành cho người trưởng thành. Chúng tôi không cố ý thu thập thông tin từ người dưới 18 tuổi."
+        },
+        {
+          "heading": "Thay đổi chính sách",
+          "body": "Chúng tôi có thể cập nhật chính sách này khi hoạt động thay đổi. Ngày ở đầu trang cho biết lần chỉnh sửa gần nhất, và các thay đổi quan trọng sẽ được phản ánh tại đây."
+        },
+        {
+          "heading": "Liên hệ",
+          "body": "Mọi câu hỏi về chính sách này hoặc thông tin của bạn xin gửi tới cloverabridal@gmail.com, hoặc gửi thư đến 27 Đường Đinh Gia Trinh, Phường Hòa Xuân, Quận Cẩm Lệ, Đà Nẵng, Việt Nam."
+        }
+      ]
     },
     "terms": {
       "heading": "Điều Khoản & Điều Kiện",
-      "updated": "Cập nhật lần cuối: 2026",
-      "body": "Đây là nội dung điều khoản tạm thời của Clovera Bridal. Vui lòng thay thế phần này bằng chính sách thực tế của CLOVERA Bridal về đặt cọc, thử đồ, thời gian chỉnh sửa, hủy lịch và giao hàng cho các đơn may đo, thiết kế riêng và may sẵn theo đơn."
+      "updated": "Cập nhật lần cuối: Tháng 9 năm 2026",
+      "summary": "Các điều khoản áp dụng cho lịch hẹn, báo giá và đơn hàng với Clovera Bridal — cho thuê, may đo, thiết kế riêng và vận chuyển toàn cầu.",
+      "intro": "Các Điều Khoản này áp dụng cho lịch hẹn, báo giá và đơn hàng với Clovera Bridal. Giá, tiền đặt cọc, thời gian và các hạng mục bao gồm cho chiếc váy của bạn được nêu trong thỏa thuận đơn hàng riêng mà bạn nhận và ký trước khi bắt đầu thực hiện; nếu thỏa thuận đó khác với các Điều Khoản này, thỏa thuận sẽ được ưu tiên áp dụng.",
+      "sections": [
+        {
+          "heading": "Dịch vụ của chúng tôi",
+          "body": "Clovera Bridal cung cấp dịch vụ cho thuê váy từ các bộ sưu tập, váy may đo theo số đo của bạn, thiết kế riêng hoàn toàn, và vận chuyển toàn cầu có bảo hiểm. Tình trạng còn của một mẫu, chất liệu hoặc ngày cụ thể sẽ được xác nhận tại thời điểm đặt lịch."
+        },
+        {
+          "heading": "Lịch hẹn",
+          "body": "Lịch hẹn được đặt qua form trên website này hoặc liên hệ trực tiếp và được xác nhận qua email. Vui lòng báo trước ít nhất 24 giờ nếu bạn cần dời lịch. Chúng tôi giữ khung giờ hẹn trên tinh thần thiện chí và có thể mở lại khung giờ đó sau một khoảng trễ đáng kể mà không được báo trước."
+        },
+        {
+          "heading": "Báo giá và giá",
+          "body": "Giá được báo riêng dựa trên thiết kế, chất liệu và kỹ thuật thực hiện. Báo giá có hiệu lực trong thời hạn ghi trên đó, và giá chỉ được cố định khi thỏa thuận đơn hàng được ký và tiền đặt cọc đã nhận. Trừ khi có nêu khác, giá chưa bao gồm phí vận chuyển, thuế và các khoản thuế hải quan."
+        },
+        {
+          "heading": "Đơn hàng, đặt cọc và thanh toán",
+          "body": "Cần đặt cọc để giữ ngày của bạn và bắt đầu công việc; mức cọc và lịch thanh toán được nêu trong thỏa thuận đơn hàng. Phần còn lại được thanh toán trước buổi thử đồ cuối, trước khi nhận váy hoặc trước khi gửi hàng. Chúng tôi chỉ bắt đầu sản xuất khi tiền đặt cọc đã vào tài khoản."
+        },
+        {
+          "heading": "Thử đồ và chỉnh sửa",
+          "body": "Đơn may đo và thiết kế riêng bao gồm số buổi thử đồ được nêu trong thỏa thuận. Bạn có trách nhiệm tham dự các buổi thử đồ đã hẹn; các buổi thử hoặc chỉnh sửa phát sinh vì lý do ngoài tay nghề của chúng tôi, bao gồm thay đổi số đo cơ thể, có thể được tính phí. Váy cho thuê chỉ bao gồm điều chỉnh size tiêu chuẩn."
+        },
+        {
+          "heading": "Thời gian sản xuất",
+          "body": "Chúng tôi đưa ra ngày hoàn thành dự kiến cho mỗi đơn hàng và nỗ lực đáp ứng, nhưng đây là ước tính và không phải cam kết. Chúng tôi khuyến nghị bắt đầu đơn may đo hoặc thiết kế riêng sớm trước ngày cưới. Sản xuất gấp có thể thực hiện được với khoản phí bổ sung."
+        },
+        {
+          "heading": "Thay đổi thiết kế",
+          "body": "Các thay đổi nhỏ có thể thực hiện được trong quá trình sản xuất và sẽ được xác nhận bằng văn bản, kèm theo ảnh hưởng về chi phí hoặc thời gian (nếu có). Thay đổi lớn sau khi đã bắt đầu sản xuất có thể không thực hiện được, hoặc được xem là một đơn hàng mới."
+        },
+        {
+          "heading": "Hủy đơn và hoàn tiền",
+          "body": "Tiền đặt cọc không được hoàn lại, vì khoản này dùng để giữ ngày của bạn và bù cho công việc thiết kế, chuẩn bị. Đơn may đo và thiết kế riêng không thể hủy để hoàn tiền sau khi đã bắt đầu sản xuất, vì mỗi chiếc váy được làm cho một khách hàng duy nhất. Nếu chúng tôi không thể hoàn thành đơn hàng, chúng tôi sẽ hoàn lại số tiền đã thanh toán cho phần chưa thực hiện."
+        },
+        {
+          "heading": "Điều khoản cho thuê",
+          "body": "Váy cho thuê được cung cấp trong khoảng thời gian đã thỏa thuận và phải được trả đúng ngày hẹn trong tình trạng như khi nhận, có tính đến hao mòn thông thường. Có thể áp dụng tiền đặt cọc bảo đảm hoặc phí miễn trừ hư hỏng. Việc giặt là do chúng tôi thực hiện; bạn chịu chi phí sửa chữa hoặc thay thế đối với hư hỏng vượt quá hao mòn thông thường, mất mát, và trả trễ hạn."
+        },
+        {
+          "heading": "Vận chuyển và giao hàng",
+          "body": "Đơn hàng vận chuyển được đóng gói, mua bảo hiểm và gửi qua đơn vị chuyển phát có theo dõi. Rủi ro chuyển sang bạn ngay khi chiếc váy được bàn giao cho đơn vị chuyển phát. Thời gian giao hàng là ước tính. Thuế nhập khẩu, thuế và phí hải quan tại quốc gia nhận hàng thuộc trách nhiệm của bạn."
+        },
+        {
+          "heading": "Trách nhiệm của bạn",
+          "body": "Bạn có trách nhiệm cung cấp số đo và thông tin chính xác, tham dự các buổi thử đồ, thanh toán đúng lịch, và kiểm tra chiếc váy khi nhận. Vui lòng thông báo sớm mọi vấn đề về độ vừa vặn hoặc hoàn thiện để chúng tôi khắc phục."
+        },
+        {
+          "heading": "Quyền sở hữu trí tuệ",
+          "body": "Toàn bộ thiết kế, rập, phác thảo và hình ảnh do Clovera Bridal tạo ra vẫn thuộc sở hữu của chúng tôi. Chúng tôi có thể chụp ảnh những chiếc váy đã hoàn thiện cho hồ sơ năng lực và hoạt động truyền thông; nếu bạn không muốn chúng tôi sử dụng những hình ảnh nhận diện được bạn, vui lòng thông báo bằng văn bản và chúng tôi sẽ tôn trọng điều đó."
+        },
+        {
+          "heading": "Trách nhiệm pháp lý",
+          "body": "Chúng tôi chịu trách nhiệm về chất lượng tay nghề và vật liệu. Trong phạm vi pháp luật cho phép, chúng tôi không chịu trách nhiệm với các thiệt hại gián tiếp hoặc phát sinh, hoặc với sự chậm trễ, gián đoạn do những sự kiện nằm ngoài tầm kiểm soát hợp lý của chúng tôi."
+        },
+        {
+          "heading": "Luật áp dụng",
+          "body": "Các Điều Khoản này được điều chỉnh bởi pháp luật Việt Nam. Chúng tôi luôn cố gắng giải quyết trực tiếp mọi vấn đề với bạn trước tiên."
+        },
+        {
+          "heading": "Liên hệ",
+          "body": "Clovera Bridal, 27 Đường Đinh Gia Trinh, Phường Hòa Xuân, Quận Cẩm Lệ, Đà Nẵng, Việt Nam. Email cloverabridal@gmail.com, điện thoại +84 96 988 21 57."
+        }
+      ]
     }
   },
   "notFound": {

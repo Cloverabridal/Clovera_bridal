@@ -31,7 +31,12 @@
     "viewCollection": "View Collection",
     "backToCollections": "Back to Collections",
     "backToTop": "Back to top",
-    "imagePlaceholder": "Photography coming soon"
+    "imagePlaceholder": "Photography coming soon",
+    "whatsappMessage": "Hello Clovera Bridal, I would like to ask about your bridal gowns and services.",
+    "whatsappAria": "Chat with Clovera Bridal on WhatsApp",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next"
   },
   "home": {
     "hero": {
@@ -65,8 +70,17 @@
     "eyebrow": "About Clovera Bridal",
     "heading": "Quiet craftsmanship, exclusive by design.",
     "intro": "Clovera Bridal was founded on a simple belief: a wedding gown should be made the way it is worn — once, completely, and without compromise.",
+    "storefrontAlt": "The Clovera Bridal storefront in Da Nang",
+    "storyEyebrow": "The House",
     "body1": "Based in Da Nang, Vietnam, CLOVERA Bridal brings together considered design, hand-selected fabrics, and a fitting process built around the bride rather than the calendar. We work in small numbers by choice, so every gown — made-to-measure, bespoke, or chosen from a seasonal collection — receives the same unhurried attention.",
     "body2": "Our 2026 collections, Venus in Bloom and Venus in Flight, sit alongside a fully bespoke service for brides who arrive with nothing but an idea. In every case, the process is the same: a conversation first, a sketch second, and a gown that could only belong to one person.",
+    "storyImageAlt": "A Clovera gown in the showroom display case",
+    "spaceEyebrow": "The Showroom",
+    "spaceHeading": "A quiet room in Da Nang, made for one bride at a time.",
+    "spaceBody": "Our showroom on Dinh Gia Trinh Street is finished the way we finish a gown — deep emerald walls, soft natural light, and room to breathe. Every appointment is private: one bride, the people she brings, and the full attention of our team, with the current collections and fabric library close at hand.",
+    "spaceImageAlt1": "The emerald fitting alcove at Clovera Bridal",
+    "spaceImageAlt2": "A Clovera gown displayed against the showroom wall",
+    "spaceImageAlt3": "Clovera Bridal branded hangers on a gold rail",
     "valuesHeading": "What guides the work",
     "values": [
       {
@@ -199,18 +213,134 @@
     "phoneLabel": "Hotline",
     "hoursLabel": "Hours",
     "hours": "By appointment, Monday – Sunday",
-    "socialLabel": "Follow"
+    "socialLabel": "Follow",
+    "mapLabel": "Find us",
+    "directions": "Get directions"
   },
   "legal": {
     "privacy": {
       "heading": "Privacy Policy",
-      "updated": "Last updated: 2026",
-      "body": "This is placeholder privacy policy content for Clovera Bridal. Replace this section with CLOVERA Bridal's actual data handling practices — what information is collected through the booking form and contact channels, how it is stored, who it is shared with (if anyone), and how a client can request access to or deletion of their information."
+      "updated": "Last updated: September 2026",
+      "summary": "How Clovera Bridal collects, uses, and protects the information you share when you enquire or book an appointment.",
+      "intro": "This Privacy Policy explains how Clovera Bridal (\"we\", \"us\") handles personal information when you visit cloverabridal.com, contact us, or book an appointment. We keep what we collect to the minimum needed to respond to you and provide our services.",
+      "sections": [
+        {
+          "heading": "Information we collect",
+          "body": "When you submit the appointment form we collect your name, email address, phone number, preferred appointment date, and any details you choose to share about your wedding. If you contact us by email, phone, or social media, we receive whatever information you include in that message. We do not ask you to create an account."
+        },
+        {
+          "heading": "How we use your information",
+          "body": "We use your information only to respond to your enquiry, arrange and prepare for your appointment, provide gown rental, made-to-measure, bespoke and shipping services, and communicate with you about your order. We do not use it for advertising and we do not sell it."
+        },
+        {
+          "heading": "Legal basis",
+          "body": "We process your information on the basis of your consent when you contact us, and to take steps at your request before entering into a service agreement. Where we keep limited records of past enquiries and orders, we do so for our legitimate interest in running the business and honouring our work."
+        },
+        {
+          "heading": "Sharing",
+          "body": "We share personal information only with providers who help us operate — for example our email provider, website host, and, for shipped orders, the courier and any customs agents needed to deliver to you. They may use the information only to perform that service for us. We may also disclose information where required by law."
+        },
+        {
+          "heading": "International transfers",
+          "body": "We are based in Vietnam and serve clients worldwide. If you contact us from another country, your information will be transferred to and processed in Vietnam, and by service providers that may be located elsewhere. We take reasonable steps to protect it wherever it is processed."
+        },
+        {
+          "heading": "Cookies and analytics",
+          "body": "This website does not use advertising or third-party tracking cookies. It stores a small preference in your browser to remember your chosen language. The embedded map and any embedded video are served by Google and may set their own cookies when you interact with them."
+        },
+        {
+          "heading": "Data retention",
+          "body": "We keep enquiry and appointment details only as long as needed to assist you and, if you become a client, for the length of your order plus a reasonable period afterwards for accounting and aftercare. We delete or anonymise information we no longer need."
+        },
+        {
+          "heading": "Your rights",
+          "body": "You may ask us to confirm what information we hold about you, to correct it, or to delete it, and you may withdraw your consent to further contact at any time. Email cloverabridal@gmail.com and we will respond as soon as we can."
+        },
+        {
+          "heading": "Security",
+          "body": "Appointment requests are delivered to a private business mailbox over an encrypted connection, and we limit access to your information to the people who need it to help you. No method of transmission or storage is completely secure, but we take reasonable measures to protect it."
+        },
+        {
+          "heading": "Children",
+          "body": "Our services and this website are intended for adults. We do not knowingly collect information from anyone under 18."
+        },
+        {
+          "heading": "Changes to this policy",
+          "body": "We may update this policy as our practices evolve. The date above shows when it was last revised, and significant changes will be reflected here."
+        },
+        {
+          "heading": "Contact",
+          "body": "Questions about this policy or your information can be sent to cloverabridal@gmail.com, or by post to 27 Dinh Gia Trinh Street, Hoa Xuan Ward, Cam Le District, Da Nang, Vietnam."
+        }
+      ]
     },
     "terms": {
       "heading": "Terms & Conditions",
-      "updated": "Last updated: 2026",
-      "body": "This is placeholder terms content for Clovera Bridal. Replace this section with CLOVERA Bridal's actual policies on deposits, fittings, alteration timelines, cancellations, and delivery for made-to-measure, bespoke, and ready-to-order orders."
+      "updated": "Last updated: September 2026",
+      "summary": "The terms that apply to appointments, quotations, and orders with Clovera Bridal — rental, made-to-measure, bespoke, and worldwide shipping.",
+      "intro": "These Terms apply to appointments, quotations, and orders with Clovera Bridal. The price, deposit, timeline and inclusions for your gown are set out in the individual order agreement you receive and sign before work begins; where that agreement differs from these Terms, the agreement applies.",
+      "sections": [
+        {
+          "heading": "Our services",
+          "body": "Clovera Bridal offers gown rental from our collections, made-to-measure gowns produced to your measurements, fully bespoke design, and insured worldwide shipping. Availability of a particular style, fabric, or date is confirmed at the time of booking."
+        },
+        {
+          "heading": "Appointments",
+          "body": "Appointments are booked through the form on this website or by direct contact and are confirmed by email. Please let us know at least 24 hours in advance if you need to reschedule. We hold appointment slots in good faith and may release a slot after a significant unnotified delay."
+        },
+        {
+          "heading": "Quotations and pricing",
+          "body": "Prices are quoted individually based on design, fabric, and construction. A quotation is valid for the period stated on it, and prices are fixed only once your order agreement is signed and your deposit received. Unless stated otherwise, prices exclude shipping, taxes, and any customs duties."
+        },
+        {
+          "heading": "Orders, deposits and payment",
+          "body": "A deposit is required to reserve your date and begin work; the amount and payment schedule are set out in your order agreement. The balance is due before final fitting, collection, or dispatch. We begin production only once the deposit has cleared."
+        },
+        {
+          "heading": "Fittings and alterations",
+          "body": "Made-to-measure and bespoke orders include the number of fittings stated in your agreement. It is your responsibility to attend scheduled fittings; additional fittings or alterations needed for reasons outside our workmanship, including changes in your measurements, may be charged. Rental gowns include standard sizing adjustments only."
+        },
+        {
+          "heading": "Production timelines",
+          "body": "We give an estimated completion date for every order and work to meet it, but dates are estimates and not guaranteed. We recommend starting a made-to-measure or bespoke order well ahead of your wedding. Rush production may be possible for an additional fee."
+        },
+        {
+          "heading": "Changes to a design",
+          "body": "Minor changes may be possible during production and will be confirmed in writing, along with any cost or timeline impact. Significant changes after production has started may not be possible, or may be treated as a new order."
+        },
+        {
+          "heading": "Cancellations and refunds",
+          "body": "Deposits are non-refundable, as they reserve your date and cover design and preparation work. Made-to-measure and bespoke orders cannot be cancelled for a refund once production has begun, because each gown is made for one client. If we are unable to fulfil an order, we refund amounts paid for the unfulfilled part."
+        },
+        {
+          "heading": "Rental terms",
+          "body": "Rental gowns are provided for the agreed period and must be returned by the agreed date in the condition supplied, allowing for normal wear. A security deposit or damage waiver may apply. Cleaning is arranged by us; you are responsible for the cost of repair or replacement for damage beyond normal wear, for loss, and for late return."
+        },
+        {
+          "heading": "Shipping and delivery",
+          "body": "Shipped orders are packed, insured, and sent by tracked courier. Risk passes to you once the gown is handed to the courier. Delivery times are estimates. Import duties, taxes, and customs charges in the destination country are your responsibility."
+        },
+        {
+          "heading": "Your responsibilities",
+          "body": "You are responsible for providing accurate measurements and information, attending fittings, making payments on schedule, and inspecting your gown on receipt. Please tell us about any concern with fit or finish promptly so we can put it right."
+        },
+        {
+          "heading": "Intellectual property",
+          "body": "All designs, patterns, sketches, and photographs created by Clovera Bridal remain our property. We may photograph finished gowns for our portfolio and marketing; if you would prefer we not use images that identify you, tell us in writing and we will respect that."
+        },
+        {
+          "heading": "Liability",
+          "body": "We are responsible for the quality of our workmanship and materials. To the extent permitted by law, we are not liable for indirect or consequential losses, or for delays or failures caused by events outside our reasonable control."
+        },
+        {
+          "heading": "Governing law",
+          "body": "These Terms are governed by the laws of Vietnam. We will always try to resolve any concern with you directly first."
+        },
+        {
+          "heading": "Contact",
+          "body": "Clovera Bridal, 27 Dinh Gia Trinh Street, Hoa Xuan Ward, Cam Le District, Da Nang, Vietnam. Email cloverabridal@gmail.com, phone +84 96 988 21 57."
+        }
+      ]
     }
   },
   "notFound": {
