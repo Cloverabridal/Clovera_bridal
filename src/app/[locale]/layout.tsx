@@ -8,6 +8,7 @@ import { displace, playfair, inter } from "@/lib/fonts";
 import { pageMetadata } from "@/lib/seo";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { ScrollToTop } from "@/components/ui/ScrollToTop";
 import "../globals.css";
 
 export function generateStaticParams() {
@@ -66,6 +67,7 @@ export default async function LocaleLayout({
             {children}
           </main>
           <Footer />
+          <ScrollToTop />
         </NextIntlClientProvider>
       </body>
     </html>
