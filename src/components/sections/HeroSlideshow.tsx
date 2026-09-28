@@ -24,11 +24,6 @@ export function HeroSlideshow({ clips }: { clips: Clip[] }) {
     );
   }
 
-  // A single clip loops on itself natively; multiple clips cycle in
-  // sequence via onEnded (loop would suppress the "ended" event needed
-  // to advance).
-  const single = clips.length === 1;
-
   return (
     <AnimatePresence mode="sync">
       <motion.video
@@ -37,9 +32,8 @@ export function HeroSlideshow({ clips }: { clips: Clip[] }) {
         poster={current.poster}
         autoPlay
         muted
-        loop={single}
         playsInline
-        onEnded={single ? undefined : () => setIndex((i) => (i + 1) % clips.length)}
+        onEnded={() => setIndex((i) => (i + 1) % clips.length)}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}

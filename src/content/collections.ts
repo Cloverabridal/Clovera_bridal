@@ -46,10 +46,15 @@ export const collectionVideos: Record<
   ],
 };
 
-// Home hero: the client's brand demo reel — a bride's real visit to the
-// Da Nang showroom, from arrival to fitting to veil. Loops continuously.
+// Home hero slideshow: leads with actual Venus in Bloom gown footage,
+// then transitions into Venus in Flight.
 export const heroClips: { src: string; poster: string }[] = [
-  { src: "/video/hero-demo.mp4", poster: "/video/posters/hero-demo.jpg" },
+  { src: "/video/bloom-look-1.mp4", poster: "/video/posters/bloom-look-1.jpg" },
+  { src: "/video/bloom-look-2.mp4", poster: "/video/posters/bloom-look-2.jpg" },
+  { src: "/video/bloom-look-21.mp4", poster: "/video/posters/bloom-look-21.jpg" },
+  { src: "/video/flight-look-3.mp4", poster: "/video/posters/flight-look-3.jpg" },
+  { src: "/video/flight-look-5.mp4", poster: "/video/posters/flight-look-5.jpg" },
+  { src: "/video/flight-look-7.mp4", poster: "/video/posters/flight-look-7.jpg" },
 ];
 
 export const serviceSlugs = [
