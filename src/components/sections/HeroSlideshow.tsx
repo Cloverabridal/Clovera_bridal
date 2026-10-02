@@ -1,15 +1,49 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
 type Clip = { src: string; poster: string };
 
+const RESUME_EVENTS = ["touchend", "pointerup", "click"] as const;
+
 export function HeroSlideshow({ clips }: { clips: Clip[] }) {
   const [index, setIndex] = useState(0);
   const shouldReduceMotion = useReducedMotion();
+  const videoRef = useRef<HTMLVideoElement>(null);
   const current = clips[index];
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    // React doesn't reliably reflect the `muted` prop onto the element, and
+    // iOS Safari only allows autoplay when the video is truly muted.
+    video.muted = true;
+    video.defaultMuted = true;
+
+    let cancelled = false;
+
+    const resume = () => {
+      video.play().catch(() => {});
+      RESUME_EVENTS.forEach((e) => window.removeEventListener(e, resume));
+    };
+
+    video.play().catch(() => {
+      if (cancelled) return;
+      // Autoplay was blocked (iPhone Low Power Mode, in-app browsers such as
+      // Zalo or Messenger): start the clip on the visitor's first tap instead.
+      RESUME_EVENTS.forEach((e) =>
+        window.addEventListener(e, resume, { passive: true }),
+      );
+    });
+
+    return () => {
+      cancelled = true;
+      RESUME_EVENTS.forEach((e) => window.removeEventListener(e, resume));
+    };
+  }, [current.src, shouldReduceMotion]);
 
   if (shouldReduceMotion) {
     return (
@@ -33,6 +67,7 @@ export function HeroSlideshow({ clips }: { clips: Clip[] }) {
     <AnimatePresence mode="sync">
       <motion.video
         key={current.src}
+        ref={videoRef}
         src={current.src}
         poster={current.poster}
         autoPlay
