@@ -4,9 +4,9 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { SocialIcon } from "@/components/ui/SocialIcon";
 import { CtaBand } from "@/components/layout/CtaBand";
+import { FeaturedReview } from "@/components/sections/FeaturedReview";
 import { ReviewCard } from "@/components/sections/ReviewCard";
-import { ReviewVideo } from "@/components/sections/ReviewVideo";
-import { reviews, videoReviews } from "@/content/reviews";
+import { reviews } from "@/content/reviews";
 import { socialLinks } from "@/content/site";
 import { pageMetadata } from "@/lib/seo";
 
@@ -30,6 +30,7 @@ export default async function ReviewsPage({
   setRequestLocale(locale);
 
   const t = await getTranslations("reviews");
+  const tCommon = await getTranslations("common");
   const tCollections = await getTranslations("collections");
   const tServices = await getTranslations("services");
 
@@ -55,6 +56,9 @@ export default async function ReviewsPage({
     href: gown?.collection ? `/collections/${gown.collection}` : undefined,
   });
 
+  const featured = reviews.find((r) => r.featured);
+  const others = reviews.filter((r) => r !== featured);
+
   const rated = reviews.filter((r) => r.rating);
   const average = rated.length
     ? rated.reduce((sum, r) => sum + (r.rating ?? 0), 0) / rated.length
@@ -67,72 +71,59 @@ export default async function ReviewsPage({
           maximumFractionDigits: 1,
         }).format(average);
 
-  const lang = locale === "vi" ? "vi" : "en";
-  const [featuredVideo, ...moreVideos] = videoReviews;
-  const hasContent = videoReviews.length + reviews.length > 0;
-
-  const renderVideo = (video: (typeof videoReviews)[number]) => {
-    const gown = gownInfo(video.gown);
-    return (
-      <ReviewVideo
-        src={video.video}
-        poster={video.poster}
-        label={video.label[lang]}
-        meta={video.location}
-        playLabel={t("playVideo")}
-        gownLabel={gown.label}
-        gownHref={gown.href}
-      />
-    );
-  };
+  const featuredGown = gownInfo(featured?.gown);
+  const originalLanguageName =
+    featured?.originalLanguage && featured.originalLanguage !== locale
+      ? (new Intl.DisplayNames(locale, { type: "language" }).of(
+          featured.originalLanguage,
+        ) ?? featured.originalLanguage)
+      : undefined;
+  const translatedNote = originalLanguageName
+    ? t("translatedNote", {
+        // Vietnamese writes "tiếng Anh" mid-sentence: lower-case only the
+        // first letter of the name Intl returns ("Tiếng Anh").
+        language:
+          locale === "vi"
+            ? originalLanguageName.charAt(0).toLocaleLowerCase("vi") +
+              originalLanguageName.slice(1)
+            : originalLanguageName,
+      })
+    : undefined;
 
   return (
     <>
       <section className="py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 sm:px-8">
-          <div
-            className={
-              featuredVideo
-                ? "grid items-center gap-12 lg:grid-cols-2 lg:gap-16"
-                : undefined
-            }
-          >
-            <Reveal>
-              <SectionHeading
-                eyebrow={t("eyebrow")}
-                heading={t("heading")}
-                body={t("intro")}
-                as="h1"
-              />
-              {averageText && (
-                <p className="mt-6 text-xs uppercase tracking-[0.2em] text-gold">
-                  {t("summary", {
-                    average: averageText,
-                    count: rated.length,
-                  })}
-                </p>
-              )}
-            </Reveal>
-            {featuredVideo && (
-              <Reveal delay={0.1} className="lg:justify-self-center">
-                {renderVideo(featuredVideo)}
-              </Reveal>
+          <Reveal>
+            <SectionHeading
+              eyebrow={t("eyebrow")}
+              heading={t("heading")}
+              body={t("intro")}
+              as="h1"
+            />
+            {averageText && (
+              <p className="mt-6 text-xs uppercase tracking-[0.2em] text-gold">
+                {t("summary", { average: averageText, count: rated.length })}
+              </p>
             )}
-          </div>
+          </Reveal>
 
-          {moreVideos.length > 0 && (
-            <div className="mt-20 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-              {moreVideos.map((video, index) => (
-                <Reveal key={video.id} delay={(index % 3) * 0.08}>
-                  {renderVideo(video)}
-                </Reveal>
-              ))}
+          {featured && (
+            <div className="mt-16">
+              <FeaturedReview
+                review={featured}
+                locale={locale}
+                gownLabel={featuredGown.label}
+                gownHref={featuredGown.href}
+                translatedNote={translatedNote}
+                ctaLabel={tCommon("bookAppointment")}
+              />
             </div>
           )}
 
-          {reviews.length > 0 && (
+          {others.length > 0 && (
             <div className="mt-20 columns-1 gap-6 md:columns-2 lg:columns-3">
-              {reviews.map((review, index) => {
+              {others.map((review, index) => {
                 const gown = gownInfo(review.gown);
                 return (
                   <Reveal
@@ -157,7 +148,7 @@ export default async function ReviewsPage({
             </div>
           )}
 
-          {!hasContent && (
+          {reviews.length === 0 && (
             <Reveal
               delay={0.1}
               className="mt-14 border border-line bg-paper-raised px-6 py-16 text-center sm:px-12"

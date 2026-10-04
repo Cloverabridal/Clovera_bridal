@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
-import type { Review } from "@/content/reviews";
+import { pickText, reviewName, type Review } from "@/content/reviews";
 
 type ReviewCardProps = {
   review: Review;
@@ -55,8 +55,7 @@ export function ReviewCard({
   gownHref,
   ratingLabel,
 }: ReviewCardProps) {
-  const quote =
-    review.quote[locale as "en" | "vi"] ?? review.quote.en ?? review.quote.vi;
+  const quote = pickText(review.quote, locale);
   if (!quote) return null;
 
   const when = review.weddingDate
@@ -70,7 +69,7 @@ export function ReviewCard({
         <div className="relative aspect-[4/5] overflow-hidden bg-paper">
           <Image
             src={review.photo}
-            alt={review.name}
+            alt={reviewName(review, locale)}
             fill
             sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 100vw"
             className="object-cover"
@@ -84,7 +83,7 @@ export function ReviewCard({
         </blockquote>
         <footer className="mt-6 border-t border-line pt-5">
           <p className="text-xs uppercase tracking-[0.2em] text-ink">
-            {review.name}
+            {reviewName(review, locale)}
           </p>
           {meta && <p className="mt-1.5 text-sm text-ink-soft">{meta}</p>}
           {gownLabel &&
