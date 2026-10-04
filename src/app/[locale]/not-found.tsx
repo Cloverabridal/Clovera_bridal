@@ -10,7 +10,7 @@ export default async function NotFound() {
         <p className="text-xs uppercase tracking-[0.25em] text-gold">
           {t("eyebrow")}
         </p>
-        <h1 className="mt-4 font-serif text-4xl text-ink sm:text-5xl">
+        <h1 className="mt-4 font-serif text-3xl text-ink sm:text-4xl">
           {t("heading")}
         </h1>
         <p className="mt-5 text-base leading-relaxed text-ink-soft">

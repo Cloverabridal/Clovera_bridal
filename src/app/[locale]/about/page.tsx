@@ -89,7 +89,7 @@ export default async function AboutPage({
             <p className="text-xs uppercase tracking-[0.25em] text-gold">
               {t("spaceEyebrow")}
             </p>
-            <h2 className="mt-3 font-serif text-3xl text-ink sm:text-4xl">
+            <h2 className="mt-3 font-serif text-2xl text-ink sm:text-3xl">
               {t("spaceHeading")}
             </h2>
             <p className="mt-6 text-base leading-relaxed text-ink-soft">
@@ -124,14 +124,14 @@ export default async function AboutPage({
       <section className="border-t border-line py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 sm:px-8">
           <Reveal>
-            <h2 className="font-serif text-3xl text-ink sm:text-4xl">
+            <h2 className="font-serif text-2xl text-ink sm:text-3xl">
               {t("valuesHeading")}
             </h2>
           </Reveal>
           <div className="mt-12 grid gap-10 sm:grid-cols-3">
             {values.map((value, index) => (
               <Reveal key={value.title} delay={index * 0.1}>
-                <span className="font-serif text-2xl text-gold">
+                <span className="font-serif text-xl text-gold">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <h3 className="mt-3 font-serif text-xl text-ink">

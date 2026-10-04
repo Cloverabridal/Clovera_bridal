@@ -33,7 +33,7 @@ export async function ServicesTeaser() {
                 href={`/services#${item.slug}`}
                 className="group flex h-full flex-col bg-paper p-8 transition-colors hover:bg-paper-raised"
               >
-                <span className="font-serif text-3xl text-gold">
+                <span className="font-serif text-2xl text-gold">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <h3 className="mt-5 font-serif text-xl text-ink">

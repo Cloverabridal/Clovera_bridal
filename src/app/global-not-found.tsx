@@ -16,7 +16,7 @@ export default function GlobalNotFound() {
     >
       <body className="flex min-h-full flex-col items-center justify-center bg-paper px-6 text-center text-ink">
         <p className="text-xs uppercase tracking-[0.25em] text-gold">404</p>
-        <h1 className="mt-4 font-serif text-4xl sm:text-5xl">
+        <h1 className="mt-4 font-serif text-3xl sm:text-4xl">
           This page doesn&apos;t exist.
         </h1>
         <p className="mt-5 max-w-md text-base leading-relaxed text-ink-soft">

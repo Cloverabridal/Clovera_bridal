@@ -12,9 +12,9 @@ type SectionHeadingProps = {
 };
 
 const headingSizes = {
-  lg: "text-4xl sm:text-5xl",
-  md: "text-3xl sm:text-4xl",
-  sm: "text-2xl sm:text-3xl",
+  lg: "text-3xl sm:text-4xl",
+  md: "text-2xl sm:text-3xl",
+  sm: "text-xl sm:text-2xl",
 };
 
 export function SectionHeading({

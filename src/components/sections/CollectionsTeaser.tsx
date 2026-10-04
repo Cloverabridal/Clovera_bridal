@@ -47,7 +47,7 @@ export async function CollectionsTeaser() {
                   <p className="text-xs uppercase tracking-[0.2em] text-gold">
                     {item.year}
                   </p>
-                  <h3 className="mt-2 font-serif text-2xl text-ink">
+                  <h3 className="mt-2 font-serif text-xl text-ink">
                     {item.name}
                   </h3>
                   <p className="mt-1 text-sm text-ink-soft">

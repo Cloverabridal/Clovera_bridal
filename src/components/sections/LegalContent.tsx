@@ -19,7 +19,7 @@ export function LegalContent({
     <section className="py-20 sm:py-24">
       <div className="mx-auto max-w-2xl px-6 sm:px-8">
         <Reveal>
-          <h1 className="font-serif text-4xl text-ink sm:text-5xl">
+          <h1 className="font-serif text-3xl text-ink sm:text-4xl">
             {heading}
           </h1>
           <p className="mt-3 text-xs uppercase tracking-[0.14em] text-ink-soft/70">
@@ -32,7 +32,7 @@ export function LegalContent({
           {sections.map((section, index) => (
             <Reveal key={section.heading ?? index} delay={0.05}>
               {section.heading && (
-                <h2 className="font-serif text-xl text-ink sm:text-2xl">
+                <h2 className="font-serif text-lg text-ink sm:text-xl">
                   <span className="mr-3 text-gold">
                     {String(index + 1).padStart(2, "0")}
                   </span>

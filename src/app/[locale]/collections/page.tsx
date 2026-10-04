@@ -75,7 +75,7 @@ export default async function CollectionsPage({
                   <p className="text-xs uppercase tracking-[0.2em] text-gold">
                     {item.year}
                   </p>
-                  <h2 className="mt-2 font-serif text-3xl text-ink">
+                  <h2 className="mt-2 font-serif text-2xl text-ink">
                     {item.name}
                   </h2>
                   <p className="mt-2 text-sm text-ink-soft">

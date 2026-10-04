@@ -41,7 +41,7 @@ export function BookingForm() {
         role="status"
         className="border border-line bg-paper-raised p-8 sm:p-10"
       >
-        <p className="font-serif text-2xl text-ink">{t("successTitle")}</p>
+        <p className="font-serif text-xl text-ink">{t("successTitle")}</p>
         <p className="mt-3 text-sm leading-relaxed text-ink-soft">
           {t("successBody")}
         </p>

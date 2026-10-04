@@ -16,7 +16,7 @@ export async function Hero() {
       />
 
       <Reveal className="relative z-10 mx-auto max-w-2xl px-6 text-center sm:px-8">
-        <h1 className="font-serif text-3xl leading-[1.15] text-paper sm:text-4xl lg:text-5xl">
+        <h1 className="font-serif text-2xl leading-[1.15] text-paper sm:text-3xl lg:text-4xl">
           {t("heading")}
         </h1>
         <p className="mx-auto mt-6 max-w-lg text-base leading-relaxed text-paper/80">

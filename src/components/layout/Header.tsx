@@ -81,7 +81,7 @@ export function Header() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-9 lg:flex">
+        <nav className="hidden items-center gap-5 lg:flex xl:gap-9">
           {navLinks.map((link) => {
             const active = pathname === link.href;
             return (
@@ -90,7 +90,7 @@ export function Header() {
                 href={link.href}
                 aria-current={active ? "page" : undefined}
                 className={cn(
-                  "text-[13px] uppercase tracking-[0.14em] transition-colors hover:text-gold-soft",
+                  "text-[13px] uppercase tracking-[0.1em] transition-colors hover:text-gold-soft xl:tracking-[0.14em]",
                   active ? "text-paper" : "text-paper/70",
                 )}
               >

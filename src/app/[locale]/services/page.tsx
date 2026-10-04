@@ -79,10 +79,10 @@ export default async function ServicesPage({
                 delay={0.1}
                 className={imageFirst ? "lg:order-1" : ""}
               >
-                <span className="font-serif text-3xl text-gold">
+                <span className="font-serif text-2xl text-gold">
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <h2 className="mt-4 font-serif text-3xl text-ink sm:text-4xl">
+                <h2 className="mt-4 font-serif text-2xl text-ink sm:text-3xl">
                   {service.title}
                 </h2>
                 <p className="mt-5 max-w-md text-base leading-relaxed text-ink-soft">

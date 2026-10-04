@@ -100,7 +100,7 @@ export default async function CollectionDetailPage({
               <p className="text-xs uppercase tracking-[0.25em] text-gold">
                 In Motion
               </p>
-              <h2 className="mt-3 font-serif text-3xl text-ink sm:text-4xl">
+              <h2 className="mt-3 font-serif text-2xl text-ink sm:text-3xl">
                 {collection.name}, filmed
               </h2>
             </Reveal>
