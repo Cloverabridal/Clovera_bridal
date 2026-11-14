@@ -8,9 +8,24 @@
     "about": "About",
     "collections": "Collections",
     "services": "Services",
+    "gallery": "Gallery",
     "reviews": "Reviews",
     "contact": "Contact",
     "book": "Book Now"
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "heading": "Brides in Clovera.",
+    "intro": "Real brides, real moments — photographed in Clovera gowns.",
+    "photoCount": "{count, plural, one {# photograph} other {# photographs}}",
+    "openPhoto": "Open photo",
+    "homeEyebrow": "Our Brides",
+    "homeHeading": "Brides in Clovera",
+    "homeCta": "View the gallery",
+    "slideLabel": "Open the gallery",
+    "prev": "Previous photos",
+    "next": "Next photos",
+    "carouselLabel": "Featured bride photographs"
   },
   "reviews": {
     "eyebrow": "Brides' Reviews",

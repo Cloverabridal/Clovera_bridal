@@ -44,19 +44,23 @@ export function Header() {
             <PhoneIcon className="h-3.5 w-3.5" />
             {contactDetails.phone}
           </a>
-          <div className="flex items-center gap-4">
-            {socialLinks.map((social) => (
-              <a
-                key={social.name}
-                href={social.href}
-                target="_blank"
-                rel="noreferrer"
-                aria-label={social.name}
-                className="text-paper/60 transition-colors hover:text-gold-soft"
-              >
-                <SocialIcon name={social.icon} className="h-3.5 w-3.5" />
-              </a>
-            ))}
+          <div className="flex items-center gap-5">
+            <LocaleSwitch className="[&_button]:py-0" />
+            <span className="h-3.5 w-px bg-paper/20" aria-hidden="true" />
+            <div className="flex items-center gap-4">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={social.name}
+                  className="text-paper/60 transition-colors hover:text-gold-soft"
+                >
+                  <SocialIcon name={social.icon} className="h-3.5 w-3.5" />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -81,7 +85,7 @@ export function Header() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-5 lg:flex xl:gap-9">
+        <nav className="hidden items-center gap-4 lg:flex xl:gap-9">
           {navLinks.map((link) => {
             const active = pathname === link.href;
             return (
@@ -90,7 +94,7 @@ export function Header() {
                 href={link.href}
                 aria-current={active ? "page" : undefined}
                 className={cn(
-                  "text-[13px] uppercase tracking-[0.1em] transition-colors hover:text-gold-soft xl:tracking-[0.14em]",
+                  "text-[12px] uppercase tracking-[0.08em] transition-colors hover:text-gold-soft xl:text-[13px] xl:tracking-[0.14em]",
                   active ? "text-paper" : "text-paper/70",
                 )}
               >
@@ -101,7 +105,6 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-6 lg:flex">
-          <LocaleSwitch />
           <Button
             href="/book"
             variant="primary"

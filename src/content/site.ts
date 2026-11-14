@@ -7,6 +7,7 @@ export const siteConfig = {
 export const navLinks = [
   { href: "/about", key: "about" },
   { href: "/collections", key: "collections" },
+  { href: "/gallery", key: "gallery" },
   { href: "/services", key: "services" },
   { href: "/reviews", key: "reviews" },
   { href: "/contact", key: "contact" },

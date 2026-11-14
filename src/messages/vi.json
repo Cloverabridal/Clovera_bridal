@@ -8,9 +8,24 @@
     "about": "Giới Thiệu",
     "collections": "Bộ Sưu Tập",
     "services": "Dịch Vụ",
+    "gallery": "Thư Viện Ảnh",
     "reviews": "Đánh Giá",
     "contact": "Liên Hệ",
     "book": "Đặt Lịch"
+  },
+  "gallery": {
+    "eyebrow": "Thư Viện Ảnh",
+    "heading": "Cô dâu trong váy Clovera.",
+    "intro": "Những cô dâu thật, những khoảnh khắc thật — được ghi lại trong váy Clovera.",
+    "photoCount": "{count} bức ảnh",
+    "openPhoto": "Mở ảnh",
+    "homeEyebrow": "Cô Dâu Của Clovera",
+    "homeHeading": "Cô dâu trong váy Clovera",
+    "homeCta": "Xem thư viện ảnh",
+    "slideLabel": "Mở thư viện ảnh",
+    "prev": "Ảnh trước",
+    "next": "Ảnh sau",
+    "carouselLabel": "Ảnh cô dâu tiêu biểu"
   },
   "reviews": {
     "eyebrow": "Đánh Giá Từ Cô Dâu",

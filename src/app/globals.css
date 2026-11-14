@@ -37,7 +37,9 @@ html[lang="vi"] {
   --color-surface-dark: var(--color-surface-dark);
   --color-surface-dark-soft: var(--color-surface-dark-soft);
 
-  --font-serif: var(--font-heading), Georgia, serif;
+  /* Playfair is the fallback so a Vietnamese letter missing from Displace
+     never drops to a mismatched system font. */
+  --font-serif: var(--font-heading), var(--font-playfair), Georgia, serif;
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 
   --animate-fade-up: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
